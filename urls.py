@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import *
-from healingcirclenaturalhealth.settings import MEDIA_ROOT
+from healingcirclemassage.settings import MEDIA_ROOT
 
 urlpatterns = patterns('django.views.generic.simple',
     (r'^$', 'direct_to_template', {'template': 'home.html'}),

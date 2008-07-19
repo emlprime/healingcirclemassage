@@ -89,4 +89,5 @@ INSTALLED_APPS = (
     'django.contrib.sites',
 	'%(PROJECT_NAME)s.common' % {'PROJECT_NAME': PROJECT_NAME },
 	'%(PROJECT_NAME)s.product' % {'PROJECT_NAME': PROJECT_NAME },
+	'%(PROJECT_NAME)s.static' % {'PROJECT_NAME': PROJECT_NAME },
 )
