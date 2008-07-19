@@ -1,0 +1,207 @@
+* {
+	margin:0;
+	padding:0;
+	}
+body {
+	background-attachment:fixed;
+	background: #edebf4 url("/media/images/background.png") no-repeat top left;
+	padding:14px 20px 0 73px;
+	margin:0;
+	font:normal 15px/18px verdana;
+	}
+
+#navigation
+{
+position: relative;
+float: right;
+margin: 1em;
+background-color: #3f3980;
+padding: 10px;
+}
+#navigation li
+{
+list-style-type: none;
+font-weight: bold;
+font-size: 16px;
+margin-bottom: 1em;
+}
+
+#navigation li a
+{
+text-decoration: none;
+color: #fff;
+}
+
+#navigation li a:hover
+{
+text-decoration: underline;
+}
+
+#main
+{
+width: 50% !important;
+min-width: 800px;
+width: 800px;
+margin: auto;
+position: relative;
+}
+
+#header
+{
+background: #edebf4 url("/media/images/logo.png") no-repeat top left;
+height: 130px;
+position: relative;
+}
+
+#header h1
+{
+top: 55px;
+right: 10px;
+position: absolute;
+font:bold 32px Georgia;
+color: blue;
+}
+
+h1 {
+ font-size:                     21px;
+    font-weight:                    bold;
+ display:                           inline;
+}
+
+h2 {
+ font-size:                     18px;
+    font-weight:                    bold;
+    text-decoration:            underline;
+ display:                           inline;
+}
+
+.header h1
+{
+margin: auto;
+text-align: center;
+display: block;
+width: 80%;
+}
+
+#frame
+{
+background-color: #fff;
+position: relative;
+}
+#content
+{
+position: relative;
+background:transparent url("/media/images/banner.png") no-repeat top left;
+padding: 20px 80px;
+width: 500px;
+min-height: 600px;
+}
+
+#content h3
+{
+color: #3f3980;
+background-color: #fff;
+font-size: 1.3em;
+margin-bottom: .3em;
+border-bottom: 3px solid blue;
+}
+#content div.section
+{
+margin-bottom: 1em;
+}
+
+#content p
+{
+margin-bottom: .5em;
+}
+
+#content dt
+{
+font-weight: bold;
+}
+
+#content dd
+{
+margin-left: 10px;
+}
+
+#resume p {
+text-align: left;
+margin-bottom: 1em;
+}
+
+#resume p.description
+{
+text-indent: 1em;
+}
+
+#resume .header p {
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+#resume dd h2
+{
+font-size: 16px;
+margin: 0px;
+}
+
+#resume dd
+{
+text-align: left;
+margin-bottom: 1em;
+}
+
+#resume dt
+{
+text-align: left;
+margin-top: 1em;
+font-size: 20px;
+font-weight: bold;
+}
+
+#resume li
+{
+text-align: left;
+}
+
+#services ul
+{
+list-style-type: none;
+position: relative;
+}
+#services li
+{
+outline: 3px solid blue;
+padding: .6em;
+margin: 10px 0px;
+position: relative;
+clear: left;
+}
+
+#services
+{
+font-size: 1.2em;
+}
+
+img.product_image
+{
+float: left;
+margin: 0px 10px 10px 0px;
+}
+
+div.clear_float
+{
+clear: both;
+}
+
+#intake
+{
+font-size: 1.2em;
+}
+
+#resume .misc, #resume .misc p
+{
+text-align: center;
+}
