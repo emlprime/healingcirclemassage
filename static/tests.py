@@ -12,7 +12,8 @@ class TestStory(CommonTestCase):
         she should...
         """
         alice = self.alice
-        # see a sidebar with links to each section
+        # see the index page
         templates_used = ["home.html", "base.html"]
         doc = alice.clicks_a_link("/", templates_used=templates_used)
-
+        # see a sidebar with links to each section
+        
