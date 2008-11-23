@@ -4,7 +4,10 @@
 	}
 body {
 	background-attachment:fixed;
-	background: #edebf4 url("/media/images/background.png") no-repeat top left;
+	font-family: trebuchet ms,modern;
+  	font-size: 15px;
+	background: #edebf4 url("/media/images/background.png") 
+	top left;
 	padding:14px 20px 0 73px;
 	margin:0;
 	font:normal 15px/18px verdana;
@@ -15,20 +18,20 @@ body {
 position: relative;
 float: right;
 margin: 1em;
-background-color: #3f3980;
+background-image: url("/media/images/sidebar_middle.png");
 padding: 10px;
 }
 #navigation li
 {
 list-style-type: none;
-font-weight: bold;
-font-size: 16px;
+font-size: 14px;
 margin-bottom: 1em;
+text-align: center;
 }
 
 #navigation li a
 {
-text-decoration: none;
+text-decoration: underline;
 color: #fff;
 }
 
@@ -48,8 +51,8 @@ position: relative;
 
 #header
 {
-background: #edebf4 url("/media/images/logo.png") no-repeat top left;
-height: 130px;
+height: 411x;
+text-align: center;
 position: relative;
 }
 
@@ -91,7 +94,6 @@ position: relative;
 #content
 {
 position: relative;
-background:transparent url("/media/images/banner.png") no-repeat top left;
 padding: 20px 80px;
 width: 500px;
 min-height: 600px;

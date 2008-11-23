@@ -1,37 +1,40 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
     <title>{% block title %}Healing Circle Masage{% endblock %}</title>
-    {% block css %}<link rel="stylesheet" type="text/css" href="/media/css/base.css">{% endblock %}
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    {% block css %}<link rel="stylesheet" type="text/css" href="/media/css/base.css" />{% endblock %}
     {% block section_css %}{% endblock %}
     {% block page_css %}{% endblock %}
-</head>
-<body>
-<div id="page">
-<div id="main">
+  </head>
+  <body>
+    <div id="page">
+      <div id="main">
 	<div id="header">
-	<h1>HEALING CIRCLE NATURAL HEALTH</h1>
+	  <img alt="Healing Circle Massage" src="/media/images/yinyang.gif" />
 	</div>
 	<div id="frame">
-	<div id="navigation">
-	{% block navigation %}
-	<ul>
-	  <li><a href="/">Home</a></li>
-	  <li><a href="/services/">Services</a></li>
-	  <li><a href="/consultation/">Consultations</a></li>
-	  <li><a href="/intake/">Health Form</a></li>
-	  <li><a href="/resume/">Resume</a></li>
-	</ul>
-	{% endblock %}
+	  <div id="navigation">
+	    {% block navigation %}
+	    <ul>
+	      <li><a href="/">Home</a></li>
+	      <li><a href="/services/">Services</a></li>
+	      <li><a href="/resume/">Resume</a></li>
+	      <li><a href="/faq/">FAQ</a></li>
+	      <li><a href="/news/">In the News</a></li>
+	      <li><a href="/events/">Events</a></li>
+	      <li><a href="/appointments/">Appointments</a></li>
+	      <li><a href="/testimonials/">Testimonials</a></li>
+	    </ul>
+	    {% endblock %}
+	  </div>
+	  <div id="content">
+	    {% block content %}
+	    {% endblock %}
+	    <div class="clear_float">
+	    </div>
+	    
+	  </div>
 	</div>
-	<div id="content">
-	{% block content %}
-	{% endblock %}
-	<div class="clear_float">
-	</div>
-	
-	</div>
-</div>
-
-</body>
+  </body>
 </html>
