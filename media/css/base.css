@@ -1,60 +1,106 @@
-* {
+
+*
+{
 	margin:0;
 	padding:0;
-	}
-body {
-	background-attachment:fixed;
+}
+
+body
+{
 	font-family: trebuchet ms,modern;
-  	font-size: 15px;
-	background: #edebf4 url("/media/images/background.png") 
-	top left;
-	padding:14px 20px 0 73px;
-	margin:0;
-	font:normal 15px/18px verdana;
-	}
+	font-size: 15px;
+	background-image: url('/media/images/reiki1.jpg');
+  	color: FFFFFF;  
+}
 
 #navigation
 {
-position: relative;
-float: right;
-margin: 1em;
-background-image: url("/media/images/sidebar_middle.png");
-padding: 10px;
+	position: relative;
+	background-image: url("/media/images/sidebar_middle.png");
+	height: 350px;
+	margin-top: 50px;
 }
+
 #navigation li
 {
-list-style-type: none;
-font-size: 14px;
-margin-bottom: 1em;
-text-align: center;
+	list-style-type: none;
+	font-size: 16px;
+	margin-top: 1.5em;
+	text-align: center;
 }
 
 #navigation li a
 {
-text-decoration: underline;
-color: #fff;
+	text-decoration: underline;
+	color: #fff;
 }
 
 #navigation li a:hover
 {
-text-decoration: underline;
-}
-
-#main
-{
-width: 50% !important;
-min-width: 800px;
-width: 800px;
-margin: auto;
-position: relative;
+	text-decoration: underline;
 }
 
 #header
 {
-height: 411x;
-text-align: center;
-position: relative;
+	height: 411x;
+	text-align: center;
+	margin-top: 50px;
+	position: relative;
 }
+
+.announce
+{
+	color: #F93;
+	font-size: 1.6em;
+	text-align: center;
+}
+
+p.natural_health_link
+{
+	margin-bottom: 1em;
+	border: 2px solid white;
+}
+
+p.natural_health_link a
+{
+	text-decoration: none;
+}
+
+#home_page, .text
+{
+	font-size: 1.4em;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+#home_page p
+{
+	margin-top: 1em;
+}
+
+#home_page a
+{
+	color: white;
+}
+
+.header_text
+{
+	color: black;
+}
+
+#blog
+{
+	font-size: .7em;
+	margin-bottom: .5em;
+}
+
+#bottom_text
+{
+	margin-bottom: 1em;
+}
+
+
 
 #header h1
 {
@@ -64,6 +110,7 @@ position: absolute;
 font:bold 32px Georgia;
 color: blue;
 }
+
 
 h1 {
  font-size:                     21px;

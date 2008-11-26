@@ -3,38 +3,58 @@
   <head>
     <title>{% block title %}Healing Circle Masage{% endblock %}</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    {% block css %}<link rel="stylesheet" type="text/css" href="/media/css/base.css" />{% endblock %}
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="/media/css/960.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/text.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/base.css" />
+    {% endblock %}
     {% block section_css %}{% endblock %}
     {% block page_css %}{% endblock %}
   </head>
   <body>
-    <div id="page">
-      <div id="main">
-	<div id="header">
-	  <img alt="Healing Circle Massage" src="/media/images/yinyang.gif" />
-	</div>
-	<div id="frame">
-	  <div id="navigation">
-	    {% block navigation %}
-	    <ul>
-	      <li><a href="/">Home</a></li>
-	      <li><a href="/services/">Services</a></li>
-	      <li><a href="/resume/">Resume</a></li>
-	      <li><a href="/faq/">FAQ</a></li>
-	      <li><a href="/news/">In the News</a></li>
-	      <li><a href="/events/">Events</a></li>
-	      <li><a href="/appointments/">Appointments</a></li>
-	      <li><a href="/testimonials/">Testimonials</a></li>
-	    </ul>
-	    {% endblock %}
-	  </div>
-	  <div id="content">
-	    {% block content %}
-	    {% endblock %}
-	    <div class="clear_float">
+    <div class="container_16">
+
+
+	    <div class="grid_4" id="navigation">
+	      {% block navigation %}
+	      <ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/services/">Services</a></li>
+		<li><a href="/resume/">Resume</a></li>
+		<li><a href="/faq/">FAQ</a></li>
+		<li><a href="/news/">In the News</a></li>
+		<li><a href="/events/">Events</a></li>
+		<li><a href="/appointments/">Appointments</a></li>
+		<li><a href="/testimonials/">Testimonials</a></li>
+	      </ul>
+	      {% endblock %}
 	    </div>
-	    
+
+	  <div id="header" class="grid_4 prefix_3">
+	    <img alt="Healing Circle Massage" src="/media/images/yinyang.gif" />
 	  </div>
-	</div>
+
+
+	    <div id="content" class="grid_8">
+
+	      <p class="announce">Selected as a "Best Practice" for 2006 and 2007 by Massage Magazine.</p>
+
+	      {% block content %}
+	      {% endblock %}
+
+	      <div class="text">
+		<p><img alt="Accepts Visa and MasterCard" src="/media/images/visa_mastercard.jpg"/></p>
+		<div id="bottom_text">
+		  <h1>Please call us today for an appointment</h1><br />
+		  <h1>(805) 680-1984</h1><br />
+		  <h1>Healing Body, Mind and Spirit</h1>
+		</div>
+		<p><img alt="BodyWork" src="/media/images/bodyworklogo.gif" /><img alt="ANMA" src="/media/images/anma.gif" /></p>
+	      </div>
+
+	    </div>
+
+    </div>
   </body>
 </html>
