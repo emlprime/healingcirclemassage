@@ -84,10 +84,10 @@ TEMPLATE_CONTEXT_PROCESSORS = ("django.core.context_processors.auth",
 
 INSTALLED_APPS = (
     'django.contrib.auth',
+    'django.contrib.admin',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
-	'%(PROJECT_NAME)s.common' % {'PROJECT_NAME': PROJECT_NAME },
-	'%(PROJECT_NAME)s.product' % {'PROJECT_NAME': PROJECT_NAME },
-	'%(PROJECT_NAME)s.static' % {'PROJECT_NAME': PROJECT_NAME },
+    'healingcirclemassage.common',
+    'healingcirclemassage.static',
 )
