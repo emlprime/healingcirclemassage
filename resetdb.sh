@@ -9,7 +9,7 @@ args = os.sys.argv[1:]
 
 if len(args) == 1:
     python = os.sys.argv[1]
-apps = 'product'
+apps = 'static'
 
 cmds = [
     python+' manage.py sqlclear '+apps+' | sqlite3 '+db,

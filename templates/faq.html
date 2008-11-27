@@ -1,0 +1,20 @@
+{% extends "static_section.html" %}
+
+{% block content %}
+
+{% for faq in object_list %}
+
+
+<div class="faq">
+
+{{faq.question}}
+
+{{faq.answer}}
+
+</div>
+
+{% endfor %}
+
+
+
+{% endblock %}

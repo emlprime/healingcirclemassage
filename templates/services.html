@@ -11,16 +11,21 @@
 
 <p class="text">Personal injury and worker's comp accepted with prescription.</p>
 
-<p class="text_black">Massage Services</p>
+{% for service in object_list %}
 
-<img src="images/KathyPhoto_t.jpg" alt="Massage">
+
 <div class="service">
-  	<p>Massage</p>
-  	<p class="product_description" width="400">Deep tissue, trigger point, swedish, sports massage and pregnancy massage.</td>
-  	<div> class="product_price" width="200">
-	  <p>1 hour $80</p>
-	  <p>1.5 hour $110</p>
-	</div>
+
+{{service.name}}
+
+{{service.description}}
+
+{{service.price}}
+
 </div>
+
+{% endfor %}
+
+
 
 {% endblock %}
