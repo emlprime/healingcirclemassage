@@ -2,14 +2,25 @@
 
 {% block content %}
 
+<h3>Frequently Asked Questions</h3>
+
+<ul>
+  {% for faq in object_list %}
+
+  <li class="faq"><a href="#{{faq|slugify}}">{{faq.question}}</a></li>
+
+  {% endfor %}
+
+</ul>
+
 {% for faq in object_list %}
 
 
 <div class="faq">
 
-{{faq.question}}
+  <a name="{{faq|slugify}}"><p id="faq_question">{{faq.question}}</p></a>
 
-{{faq.answer}}
+  <p id="faq_answer">{{faq.answer}}</p>
 
 </div>
 

@@ -5,6 +5,21 @@
 	padding:0;
 }
 
+h1
+{
+        color: white;
+}
+
+#title
+{
+margin-bottom: 1em;
+}
+
+#content
+{
+text-align: center;
+}
+
 body
 {
 	font-family: trebuchet ms,modern;
@@ -79,7 +94,7 @@ p.natural_health_link a
 	margin-top: 1em;
 }
 
-#home_page a
+a
 {
 	color: white;
 }
@@ -108,6 +123,19 @@ p.natural_health_link a
 	font-weight: normal;
 }
 
+.faq, h3
+{
+margin-bottom: 1em;
+text-align: center;
+color: white;
+}
+
+#faq_question, h3
+{
+font-size: 1.2em;
+text-decoration: underline;
+font-weight: bold;
+}
 
 
 #header h1
@@ -154,14 +182,6 @@ width: 500px;
 min-height: 600px;
 }
 
-#content h3
-{
-color: #3f3980;
-background-color: #fff;
-font-size: 1.3em;
-margin-bottom: .3em;
-border-bottom: 3px solid blue;
-}
 #content div.section
 {
 margin-bottom: 1em;

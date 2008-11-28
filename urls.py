@@ -2,7 +2,7 @@ from django.conf.urls.defaults import *
 from django.contrib import admin
 
 from healingcirclemassage.settings import MEDIA_ROOT
-from healingcirclemassage.static.models import Service, Faq
+from healingcirclemassage.static.models import Service, Faq, Testimonial
 
 
 
@@ -19,6 +19,7 @@ urlpatterns = patterns('django.views.generic.simple',
 urlpatterns += patterns('django.views.generic.list_detail',
     (r'^services/$', 'object_list',{'queryset': Service.objects.all(), 'template_name': 'services.html'}),
     (r'^faq/$', 'object_list',{'queryset': Faq.objects.all(), 'template_name': 'faq.html'}),
+    (r'^testimonials/$', 'object_list',{'queryset': Testimonial.objects.all(), 'template_name': 'testimonials.html'}),
 )
 
 urlpatterns += patterns('',
