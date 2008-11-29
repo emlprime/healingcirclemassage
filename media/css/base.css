@@ -20,6 +20,14 @@ margin-bottom: 1em;
 text-align: center;
 }
 
+#event
+{
+float: left;
+width: 300px;
+margin-top: 1em;
+}
+
+
 body
 {
 	font-family: trebuchet ms,modern;
@@ -137,6 +145,30 @@ text-decoration: underline;
 font-weight: bold;
 }
 
+.service
+{
+      outline: 2px solid white;
+      text-align: left;
+      margin: 1em;
+      color: white
+}
+
+.service_name
+{
+      font-size: 1.1em;
+      margin-left: .5em;
+}
+
+.service_description
+{
+      font-size: .9em;
+}
+
+.service_price
+{
+      text-align: right;
+}
+
 
 #header h1
 {
@@ -173,13 +205,6 @@ width: 80%;
 {
 background-color: #fff;
 position: relative;
-}
-#content
-{
-position: relative;
-padding: 20px 80px;
-width: 500px;
-min-height: 600px;
 }
 
 #content div.section

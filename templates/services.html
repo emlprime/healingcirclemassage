@@ -5,7 +5,7 @@
   <div class="section">
 
 
-<p class="text">Our Services:</p>
+<h1>Our Services:</h1>
 
 <p id="small_text">Featuring an alternative medicine library: over 1,000 categorized books and articles for you to browse or borrow.</p>
 
@@ -13,16 +13,24 @@
 
 {% for service in object_list %}
 
+{% if service.image %}
 
-<div class="service">
+<img src="/media/{{service.image}}" />
 
-{{service.name}}
+{% endif %}
 
-{{service.description}}
+<div class="service grid_11">
 
-{{service.price}}
+<p class="service_name">{{service.name}}</p>
+
+<p class="service_description grid_6">{{service.description|safe}}</p>
+
+<p class="service_price grid_4">{{service.price|safe}}</p>
 
 </div>
+
+<div class="clear">&nbsp;</div>
+
 
 {% endfor %}
 
