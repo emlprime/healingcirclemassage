@@ -1,6 +1,20 @@
 from django.db import models
 
 
+class Resume(models.Model):
+    resume = models.TextField()
+    date = models.DateField(auto_now=True)
+
+    def __unicode__(self):
+        return self.date
+
+class Home_text(models.Model):
+    text = models.TextField()
+    date = models.DateField(auto_now=True)
+
+    def __unicode__(self):
+        return self.date
+
 class Service(models.Model):
 
     CATEGORY_CHOICES = (
@@ -27,6 +41,12 @@ class Faq(models.Model):
 
 class News_item(models.Model):
     name = models.CharField(max_length = 255)
+    link = models.CharField(max_length = 255, null=True, blank=True)
+    thumbnail_image = models.ImageField(upload_to="images", null=True, blank=True)
+    image_1 = models.ImageField(upload_to="images", null=True, blank=True)
+    image_2 = models.ImageField(upload_to="images", null=True, blank=True)
+    image_3 = models.ImageField(upload_to="images", null=True, blank=True)
+    image_4 = models.ImageField(upload_to="images", null=True, blank=True)
 
     def __unicode__(self):
         return self.name
@@ -40,6 +60,12 @@ class Event(models.Model):
 
 class Writing(models.Model):
     name = models.CharField(max_length = 255)
+    link = models.CharField(max_length = 255, null=True, blank=True)
+    thumbnail_image = models.ImageField(upload_to="images", null=True, blank=True)
+    image_1 = models.ImageField(upload_to="images", null=True, blank=True)
+    image_2 = models.ImageField(upload_to="images", null=True, blank=True)
+    image_3 = models.ImageField(upload_to="images", null=True, blank=True)
+    image_4 = models.ImageField(upload_to="images", null=True, blank=True)
 
     def __unicode__(self):
         return self.name

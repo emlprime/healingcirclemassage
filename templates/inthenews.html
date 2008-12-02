@@ -1,0 +1,47 @@
+{% extends "static_section.html" %}
+
+{% block content %}
+
+<div id="title">
+  <h1>In the News</h1>
+</div>
+
+{% for news_item in object_list %}
+
+<div id="event" class="grid_6">
+
+{% if news_item.link %}
+
+<a href="/media/images/{{news_item.link}}"> <img src="/media/{{news_item.thumbnail_image}}" alt="{{news_item.name}}" /></a>
+<a href="{{news_item.link}}"><p class="faq">{{news_item.name}}</p></a>
+
+{% endif %}
+
+{% if news_item.image_1 %}
+ <a href="/media/images/{{news_item.image_1}}"> <img src="/media/{{news_item.thumbnail_image}}" alt="{{news_item.name}}" /></a>
+ <a href="/media/images/{{news_item.image_1}}"><p class="faq">{{news_item.name}}</p></a>
+{% endif %}
+
+<div class="faq">
+
+{% if news_item.image_2 %}
+(Pages 
+<a href="/media/images/{{news_item.image_1}}">1</a>
+<a href="/media/images/{{news_item.image_2}}"> | 2</a>
+
+{% if news_item.image_3 %}
+<a href="/media/images/{{news_item.image_3}}"> | 3</a>
+{% endif %}
+
+{% if news_item.image_4 %}
+<a href="/media/images/{{news_item.image_1}}"> | 4</a>
+{% endif %}
+)
+{% endif %}
+</div>
+
+</div>
+
+{% endfor %}
+
+{% endblock %}
