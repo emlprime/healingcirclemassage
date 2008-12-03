@@ -3,17 +3,17 @@ from django.db import models
 
 class Resume(models.Model):
     resume = models.TextField()
-    date = models.DateField(auto_now=True)
+    date = models.DateField(auto_now=True, auto_now_add=True)
 
     def __unicode__(self):
-        return self.date
+        return self.resume
 
 class Home_text(models.Model):
     text = models.TextField()
-    date = models.DateField(auto_now=True)
+    date = models.DateField(auto_now=True, auto_now_add=True)
 
     def __unicode__(self):
-        return self.date
+        return self.text
 
 class Service(models.Model):
 

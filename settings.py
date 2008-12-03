@@ -88,6 +88,7 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
+    'django.contrib.markup',
     'healingcirclemassage.common',
     'healingcirclemassage.static',
 )

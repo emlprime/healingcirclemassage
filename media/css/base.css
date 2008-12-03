@@ -131,7 +131,12 @@ a
 	font-weight: normal;
 }
 
-.faq, h3
+#resume
+{
+margin-top: 2em;
+}
+
+.faq, h3, #resume
 {
 margin-bottom: 1em;
 text-align: center;

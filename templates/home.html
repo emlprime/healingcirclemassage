@@ -7,14 +7,9 @@
   <h1 class="header_text">Welcome to the Healing Circle!</h1>
 
   <p class="natural_health_link"><a href="http://www.healingcirclenaturalhealth.com" target="_BLANK">For Healing Circle Natural Health</a></p>
-
-  <p>Let us enrich and nourish your body, mind and spirit with a healing, energy-boosting massage.</p>
-  <p>We provide affordable, result-oriented therapeutic and medical massage.</p>
-  <p>Kathy L. Gruver, LMT, RM is a licensed and certified medical massage therapist,</p>
-  <p>Reiki master, natural health consultant, birth assistant and traditional naturopath. Kathy has been involved in healing since 1990.</p>
-  <p>Our upper State St. office in Santa Barbara, CA features two treatment rooms, parking and an alternative medicine lending library.</p>
-  <p>Therapists available 7 days a week from 10am to 7pm.</p>
-  <p>We accept personal injury and worker's comp insurance cases with a Doctor's prescription.</p>
+{% for home_text in object_list %}
+{{home_text.text|linebreaks}}
+{% endfor %}
 
 <p id="blog"><a href="http://www.healingcirclemassage.blogspot.com">http://www.healingcirclemassage.blogspot.com</a></p>
 </div>
