@@ -2,9 +2,8 @@
 {% load markup %}
 
 {% block content %}
-<div id="resume">
-<div class="header">
-<img src="/media/images/kathy_headshot_t.jpg" />
+<div id="resume_header">
+<p><img src="/media/images/kathy_headshot_t.jpg" /></p>
 <h1>Kathy L. Gruver, LMT, RM, NHC</h1>
 <p>Doctorate of Traditional Naturopathy</p>
 <p>PO Box 3184</p>
@@ -12,10 +11,18 @@
 <p>805-680-1984</p>
 <p><a href="mailto:healingcirclemassage@hotmail.com">healingcirclemassage@hotmail.com</a></p>
 </div>
-<div id="resume">
+
+<div id="resume" class="grid_12">
 {% for resume in object_list %}
 
-{{resume.resume|markdown}}
+<h2>Employment</h2>
+{{resume.employment|linebreaks}}
+<h2>Training and Education</h2>
+{{resume.training_and_education|linebreaks}}
+<h2>Professional</h2>
+{{resume.professional|linebreaks}}
+<h2>Personal Interests</h2>
+{{resume.personal_interests|linebreaks}}
 
 {% endfor %}
 </div>

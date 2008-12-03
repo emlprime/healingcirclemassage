@@ -1,16 +1,33 @@
 from django.db import models
 
 
-class Resume(models.Model):
-    resume = models.TextField()
-    date = models.DateField(auto_now=True, auto_now_add=True)
+class Appointment(models.Model):
+    """ Model for the appointment requests submitted on the appointments page
+    """
+
+    first_name = models.CharField(max_length = 100)
+    last_name = models.CharField(max_length = 100)
+    phone_number = models.CharField(max_length = 20)
+    email = models.EmailField()
+    description = models.TextField()
 
     def __unicode__(self):
-        return self.resume
+        return self.last_name()
+
+
+class Resume(models.Model):
+    employment = models.TextField()
+    training_and_education = models.TextField()
+    professional = models.TextField()
+    personal_interests = models.TextField()
+    date = models.DateField()
+
+    def __unicode__(self):
+        return self.employment
 
 class Home_text(models.Model):
     text = models.TextField()
-    date = models.DateField(auto_now=True, auto_now_add=True)
+    date = models.DateField()
 
     def __unicode__(self):
         return self.text

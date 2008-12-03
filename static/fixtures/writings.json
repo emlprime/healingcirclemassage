@@ -1,0 +1,54 @@
+[
+    {
+        "pk": 1, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "images/best_practices.jpg", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Massage Magazine - July 2006", 
+            "link": "", 
+            "thumbnail_image": "images/best_practices_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "images/ten_health_tips_1.jpg", 
+            "image_3": "", 
+            "image_2": "images/ten_health_tips_2.jpg", 
+            "name": "Ten Health Tips", 
+            "link": "", 
+            "thumbnail_image": "images/ten_health_tips_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "images/raisethebar_a.jpg", 
+            "image_3": "", 
+            "image_2": "images/raisethebar_b.jpg", 
+            "name": "It's Time to Raise the Bar", 
+            "link": "", 
+            "thumbnail_image": "images/raisethebar_a_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.writing", 
+        "fields": {
+            "image_1": "images/massagesampler.jpg", 
+            "image_3": "", 
+            "image_2": "", 
+            "name": "Massage Sampler", 
+            "link": "", 
+            "thumbnail_image": "images/massagesampler_t.jpg", 
+            "image_4": ""
+        }
+    }, 
+]

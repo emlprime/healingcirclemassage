@@ -40,7 +40,7 @@ body
 {
 	position: relative;
 	background-image: url("/media/images/sidebar_middle.png");
-	height: 350px;
+	height: 380px;
 	margin-top: 50px;
 }
 
@@ -76,6 +76,7 @@ body
 	color: #F93;
 	font-size: 1.6em;
 	text-align: center;
+        margin-bottom: .5em;
 }
 
 p.natural_health_link
@@ -131,9 +132,25 @@ a
 	font-weight: normal;
 }
 
+#resume_header
+{
+color: white;
+}
+
+#resume_header img
+{
+margin: .5em;
+}
+
 #resume
 {
 margin-top: 2em;
+}
+
+#resume h2
+{
+text-align: left;
+margin-bottom: .5em;
 }
 
 .faq, h3, #resume
@@ -180,16 +197,6 @@ font-weight: bold;
 }
 
 
-#header h1
-{
-top: 55px;
-right: 10px;
-position: absolute;
-font:bold 32px Georgia;
-color: blue;
-}
-
-
 h1 {
  font-size:                     21px;
     font-weight:                    bold;
@@ -200,120 +207,14 @@ h2 {
  font-size:                     18px;
     font-weight:                    bold;
     text-decoration:            underline;
- display:                           inline;
 }
 
-.header h1
-{
-margin: auto;
-text-align: center;
-display: block;
-width: 80%;
-}
 
-#frame
-{
-background-color: #fff;
-position: relative;
-}
 
-#content div.section
-{
-margin-bottom: 1em;
-}
-
-#content p
-{
-margin-bottom: .5em;
-}
-
-#content dt
-{
-font-weight: bold;
-}
-
-#content dd
-{
-margin-left: 10px;
-}
 
 #resume p {
 text-align: left;
 margin-bottom: 1em;
 }
 
-#resume p.description
-{
-text-indent: 1em;
-}
 
-#resume .header p {
-text-align: center;
-margin: 0;
-padding: 0;
-}
-
-#resume dd h2
-{
-font-size: 16px;
-margin: 0px;
-}
-
-#resume dd
-{
-text-align: left;
-margin-bottom: 1em;
-}
-
-#resume dt
-{
-text-align: left;
-margin-top: 1em;
-font-size: 20px;
-font-weight: bold;
-}
-
-#resume li
-{
-text-align: left;
-}
-
-#services ul
-{
-list-style-type: none;
-position: relative;
-}
-#services li
-{
-outline: 3px solid blue;
-padding: .6em;
-margin: 10px 0px;
-position: relative;
-clear: left;
-}
-
-#services
-{
-font-size: 1.2em;
-}
-
-img.product_image
-{
-float: left;
-margin: 0px 10px 10px 0px;
-}
-
-div.clear_float
-{
-clear: both;
-}
-
-#intake
-{
-font-size: 1.2em;
-}
-
-#resume .misc, #resume .misc p
-{
-text-align: center;
-}

@@ -6,7 +6,7 @@ class TestStory(CommonTestCase):
     def setUp(self):
         CommonTestCase.setUp(self)
 
-    def test_views_the_home_page(self):
+    def test_navigation(self):
         """ Alice goes to the home page
 
         she should...
@@ -15,5 +15,9 @@ class TestStory(CommonTestCase):
         # see the index page
         templates_used = ["home.html", "base.html"]
         doc = alice.clicks_a_link("/", templates_used=templates_used)
-        # see a sidebar with links to each section
+        # follow the links to the other static sections
+        for link in ["faq", "news", "resume", "services", "writings", "testimonials", "events"]:
+            alice.clicks_a_link("/"+link+"/")
+        # goes to the appointments page
+        doc = alice.clicks_a_link("/appointments/")
         
