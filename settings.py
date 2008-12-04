@@ -1,4 +1,4 @@
-# Django settings for paxsassins project.
+# Django settings for healing circle massage project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG

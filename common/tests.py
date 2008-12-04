@@ -33,17 +33,19 @@ class Actor(TestCase):
         """ Simulate a GET request using the test client
         """
         # request the page
-        #submit the form
+        # submit the form
+        client = self.client
         try:
-            response = self.client.get(url)
+            response = client.get("/appointments/")
         except TemplateDoesNotExist:
             import traceback, sys
             exception_message = "".join(traceback.format_exception_only(sys.exc_type, sys.exc_value)).strip()
             
             self.fail("No url to handle (%s) or template does not exist: (%s)" % (url, exception_message))
+            print "url and template OK"
         except ViewDoesNotExist:
             self.fail("No view to handle (%s)" % url)
-        
+            print "view ok"
         # check that this was a valid request
         self.failUnless(response.status_code in [200, 302])
 

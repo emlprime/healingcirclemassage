@@ -14,13 +14,13 @@ def appointment(request):
         form = AppointmentForm(values)
         if form.is_valid():
             appointment=form.save()
-            message =  "%s %s\n%s\n%s\n%s" % (appointment.first_name, appointment.last_name, appointment.phone_number, appointment.email, appointment.description)
+            #message =  "%s %s\n%s\n%s\n%s" % (appointment.first_name, appointment.last_name, appointment.phone_number, appointment.email, appointment.description)
             # try to send mail. If it fails print out an error
-            try:
-                mail_admins('Appointment Request Submitted', message, fail_silently=False)
-            except:
-                print "Error: could not send mail to admins"
-            return HttpResponseRedirect("/appointment/confirm/")
+            #try:
+            #    mail_admins('Appointment Request Submitted', message, fail_silently=False)
+            #except:
+            #    print "Error: could not send mail to admins"
+            #return HttpResponseRedirect("/appointment/confirm/")
         else:
             errors=form.errors
     else:
