@@ -2,8 +2,8 @@ from django.conf.urls.defaults import *
 from django.contrib import admin
 
 from healingcirclemassage.settings import MEDIA_ROOT
-from healingcirclemassage.static.models import Service, Faq, Testimonial, Event, News_item, Home_text, Resume, Writing
-
+from healingcirclemassage.static.models import Service, Faq, Testimonial, Event, News_item, Home_text, Resume, Writing, Appointment
+from healingcirclemassage.static.forms import AppointmentForm
 
 
 admin.autodiscover()
@@ -12,6 +12,7 @@ urlpatterns = patterns('django.views.generic.simple',
     (r'^consultation/$', 'direct_to_template', {'template': 'consultation.html'}),
     (r'^intake/$', 'direct_to_template', {'template': 'intake.html'}),
     (r'^help/$', 'direct_to_template', {'template': 'help.html'}),
+    (r'^appointment/create/$', 'direct_to_template', {'template': 'appointment_confirmation.html'}),                       
 )
 
 urlpatterns += patterns('healingcirclemassage.static.views',

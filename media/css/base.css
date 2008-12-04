@@ -27,6 +27,36 @@ width: 300px;
 margin-top: 1em;
 }
 
+#form
+{
+text-align: right;
+margin-right: 180px;
+position: relative;
+margin-bottom: .5em;
+}
+
+#form p
+{
+margin-top: .5em;
+color: white;
+}
+
+#form input, #form textarea
+{
+margin-left: 30px;
+width: 300px;
+}
+
+#appointments_text
+{
+color: white;
+font-size: 1.1em;
+}
+
+#appointments_text p
+{
+margin: 1em;
+}
 
 body
 {
@@ -170,6 +200,11 @@ text-decoration: none;
 font-size: 1.2em;
 text-decoration: underline;
 font-weight: bold;
+}
+
+#services p
+{
+margin: .5em;
 }
 
 .service

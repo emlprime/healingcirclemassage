@@ -1,9 +1,13 @@
 from django.contrib import admin
-from healingcirclemassage.static.models import Service, Faq, News_item, Event, Writing, Testimonial, Resume, Home_text
+from healingcirclemassage.static.models import Service, Faq, News_item, Event, Writing, Testimonial, Resume, Home_text, Appointment
 
 class ResumeAdmin(admin.ModelAdmin):
     pass
 admin.site.register(Resume, ResumeAdmin)
+
+class AppointmentAdmin(admin.ModelAdmin):
+    pass
+admin.site.register(Appointment, AppointmentAdmin)
 
 class Home_textAdmin(admin.ModelAdmin):
     pass
