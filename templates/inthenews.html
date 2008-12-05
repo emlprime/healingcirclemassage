@@ -22,10 +22,10 @@
 {% if news_item.link %}
 
 {% if news_item.thumbnail_image %}
-<a href="{{news_item.link}}"> <img src="/media/{{news_item.thumbnail_image}}" alt="{{news_item.name}}" /></a>
+<a href="{{news_item.link}}" target="_BLANK"> <img src="/media/{{news_item.thumbnail_image}}" alt="{{news_item.name}}" /></a>
 {% endif %}
 
-<a href="{{news_item.link}}"><p class="faq">{{news_item.name}}</p></a>
+<a href="{{news_item.link}}" target="_BLANK"><p class="faq">{{news_item.name}}</p></a>
 
 {% endif %}
 
