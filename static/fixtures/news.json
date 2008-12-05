@@ -1,7 +1,7 @@
 [
     {
         "pk": 1, 
-        "model": "static.news_item", 
+        "model": "static.newsitem", 
         "fields": {
             "image_1": "", 
             "image_3": "", 
@@ -14,7 +14,7 @@
     }, 
     {
         "pk": 2, 
-        "model": "static.news_item", 
+        "model": "static.newsitem", 
         "fields": {
             "image_1": "images/dermascope_1.jpg", 
             "image_3": "images/dermascope_3.jpg", 
@@ -27,7 +27,7 @@
     }, 
     {
         "pk": 3, 
-        "model": "static.news_item", 
+        "model": "static.newsitem", 
         "fields": {
             "image_1": "images/bottled_water_web.jpg", 
             "image_3": "", 
@@ -40,7 +40,7 @@
     }, 
     {
         "pk": 4, 
-        "model": "static.news_item", 
+        "model": "static.newsitem", 
         "fields": {
             "image_1": "images/Pacific_Coast_Business_Times.jpg", 
             "image_3": "", 
@@ -53,7 +53,7 @@
     }, 
     {
         "pk": 5, 
-        "model": "static.news_item", 
+        "model": "static.newsitem", 
         "fields": {
             "image_1": "images/sbfitness_a.png", 
             "image_3": "", 
@@ -66,7 +66,7 @@
     }, 
     {
         "pk": 6, 
-        "model": "static.news_item", 
+        "model": "static.newsitem", 
         "fields": {
             "image_1": "images/Different_Strokes.jpg", 
             "image_3": "", 

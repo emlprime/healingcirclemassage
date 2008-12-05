@@ -13,7 +13,6 @@
 </div>
 
 <div id="resume" class="grid_12">
-{% for resume in object_list %}
 
 <h2>Employment</h2>
 {{resume.employment|linebreaks}}
@@ -24,6 +23,5 @@
 <h2>Personal Interests</h2>
 {{resume.personal_interests|linebreaks}}
 
-{% endfor %}
 </div>
 {% endblock %}

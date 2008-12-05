@@ -1,5 +1,5 @@
 from django.http import HttpResponseRedirect, HttpResponse
-from django.core.mail import mail_admins
+from django.core.mail import send_mail
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 
@@ -20,12 +20,13 @@ def appointment(request):
             message =  "%s %s\n%s\n%s\n%s" % (appointment.first_name, appointment.last_name, appointment.phone_number, appointment.email, appointment.description)
             # try to send mail. If it fails print out an error
             try:
-                mail_admins('Appointment Request Submitted', message, fail_silently=False)
+                send_mail('Appointment Request Submitted', message, 'appointments@healingcirclemassage.com', ['laura.m.madsen@gmail.com'], fail_silently=False)
             except:
                 print "Error: could not send mail to admins"
-            return HttpResponseRedirect("/appointment/create/")
+            return HttpResponseRedirect("/appointment/confirm/")
         else:
             errors=form.errors
+            assert False
     else:
         form = AppointmentForm()
     context = locals()
