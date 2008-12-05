@@ -10,9 +10,18 @@
 
 <div id="event" class="grid_6">
 
+{% if not writing.link %}
+{% if not writing.thumbnail_image %}
+{{writing.name}}
+{% endif %}
+{% endif %}
+
 {% if writing.link %}
 
+{% if writing.thumbnail_image %}
 <a href="{{writing.link}}"> <img src="/media/{{writing.thumbnail_image}}" alt="{{writing.name}}" /></a>
+{% endif %}
+
 <a href="{{writing.link}}"><p class="faq">{{writing.name}}</p></a>
 
 {% endif %}
