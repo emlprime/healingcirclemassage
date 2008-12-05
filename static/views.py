@@ -4,9 +4,26 @@ from django.template import RequestContext
 from django.shortcuts import render_to_response
 
 
-from healingcirclemassage.static.models import Appointment
+from healingcirclemassage.static.models import Appointment, Resume, HomeText
 from healingcirclemassage.static.forms import AppointmentForm
 
+
+def resume(request):
+    """Submits the latest resume to the URL
+    """
+    template = "resume.html"
+    resume = Resume.objects.latest()
+    context=locals()
+    return render_to_response(template, context, context_instance=RequestContext(request))
+
+def hometext(request):
+    """Submits the latest hometext to the URL
+    """
+    template = "home.html"
+    hometext = HomeText.objects.latest()
+    context=locals()
+    return render_to_response(template, context, context_instance=RequestContext(request))
+    
 
 def appointment(request):
     """ Creates an appointment object and emails to Kathy from the appointment form
