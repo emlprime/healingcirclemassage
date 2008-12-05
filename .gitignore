@@ -1,4 +1,5 @@
-bin
+bin/*
 db_data
 *~
 *.pyc
+site.pid
