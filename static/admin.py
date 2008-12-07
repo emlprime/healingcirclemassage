@@ -1,5 +1,5 @@
 from django.contrib import admin
-from healingcirclemassage.static.models import Service, Faq, News_item, Event, Writing, Testimonial, Resume, Home_text, Appointment
+from healingcirclemassage.static.models import Service, Faq, NewsItem, Event, Writing, Testimonial, Resume, HomeText, Appointment
 
 class ResumeAdmin(admin.ModelAdmin):
     pass
@@ -9,9 +9,9 @@ class AppointmentAdmin(admin.ModelAdmin):
     pass
 admin.site.register(Appointment, AppointmentAdmin)
 
-class Home_textAdmin(admin.ModelAdmin):
+class HomeTextAdmin(admin.ModelAdmin):
     pass
-admin.site.register(Home_text, Home_textAdmin)
+admin.site.register(HomeText, HomeTextAdmin)
 
 class ServiceAdmin(admin.ModelAdmin):
     pass
@@ -21,9 +21,9 @@ class FaqAdmin(admin.ModelAdmin):
     pass
 admin.site.register(Faq, FaqAdmin)
 
-class News_itemAdmin(admin.ModelAdmin):
+class NewsItemAdmin(admin.ModelAdmin):
     pass
-admin.site.register(News_item, News_itemAdmin)
+admin.site.register(NewsItem, NewsItemAdmin)
 
 class EventAdmin(admin.ModelAdmin):
     pass

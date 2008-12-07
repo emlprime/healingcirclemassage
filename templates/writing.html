@@ -10,31 +10,40 @@
 
 <div id="event" class="grid_6">
 
+{% if not writing.link %}
+{% if not writing.thumbnail_image %}
+{{writing.name}}
+{% endif %}
+{% endif %}
+
 {% if writing.link %}
 
-<a href="/media/images/{{writing.link}}"> <img src="/media/{{writing.thumbnail_image}}" alt="{{writing.name}}" /></a>
-<a href="{{writing.link}}"><p class="faq">{{writing.name}}</p></a>
+{% if writing.thumbnail_image %}
+<a href="{{writing.link}}" target="_BLANK"> <img src="/media/{{writing.thumbnail_image}}" alt="{{writing.name}}" /></a>
+{% endif %}
+
+<a href="{{writing.link}}" target="_BLANK"><p class="faq">{{writing.name}}</p></a>
 
 {% endif %}
 
 {% if writing.image_1 %}
- <a href="/media/images/{{writing.image_1}}"> <img src="/media/{{writing.thumbnail_image}}" alt="{{writing.name}}" /></a>
- <a href="/media/images/{{writing.image_1}}"><p class="faq">{{writing.name}}</p></a>
+ <a href="/media/{{writing.image_1}}"> <img src="/media/{{writing.thumbnail_image}}" alt="{{writing.name}}" /></a>
+ <a href="/media/{{writing.image_1}}"><p class="faq">{{writing.name}}</p></a>
 {% endif %}
 
 <div class="faq">
 
 {% if writing.image_2 %}
 (Pages 
-<a href="/media/images/{{writing.image_1}}">1</a>
-<a href="/media/images/{{writing.image_2}}"> | 2</a>
+<a href="/media/{{writing.image_1}}">1</a>
+<a href="/media/{{writing.image_2}}"> | 2</a>
 
 {% if writing.image_3 %}
-<a href="/media/images/{{writing.image_3}}"> | 3</a>
+<a href="/media/{{writing.image_3}}"> | 3</a>
 {% endif %}
 
 {% if writing.image_4 %}
-<a href="/media/images/{{writing.image_1}}"> | 4</a>
+<a href="/media/{{writing.image_1}}"> | 4</a>
 {% endif %}
 )
 {% endif %}

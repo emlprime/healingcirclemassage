@@ -20,6 +20,12 @@ margin-bottom: 1em;
 text-align: center;
 }
 
+#appointment_confirmation
+{
+color: white;
+margin-bottom: 1em;
+}
+
 #event
 {
 float: left;

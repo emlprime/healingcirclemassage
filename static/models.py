@@ -12,7 +12,7 @@ class Appointment(models.Model):
     description = models.TextField()
 
     def __unicode__(self):
-        return self.last_name()
+        return self.last_name
 
 
 class Resume(models.Model):
@@ -23,14 +23,22 @@ class Resume(models.Model):
     date = models.DateField()
 
     def __unicode__(self):
-        return self.employment
+        return str(self.date)
 
-class Home_text(models.Model):
+    class Meta:
+        ordering = ['-date']
+        get_latest_by = "date"
+
+class HomeText(models.Model):
     text = models.TextField()
     date = models.DateField()
 
     def __unicode__(self):
-        return self.text
+        return str(self.date)
+
+    class Meta:
+        ordering = ['-date']
+        get_latest_by = "date"
 
 class Service(models.Model):
 
@@ -56,7 +64,7 @@ class Faq(models.Model):
     def __unicode__(self):
         return self.question
 
-class News_item(models.Model):
+class NewsItem(models.Model):
     name = models.CharField(max_length = 255)
     link = models.CharField(max_length = 255, null=True, blank=True)
     thumbnail_image = models.ImageField(upload_to="images", null=True, blank=True)
