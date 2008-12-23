@@ -43,7 +43,6 @@ def appointment(request):
             return HttpResponseRedirect("/appointment/confirm/")
         else:
             errors=form.errors
-            assert False
     else:
         form = AppointmentForm()
     context = locals()
