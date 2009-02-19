@@ -76,6 +76,13 @@ class NewsItem(models.Model):
     def __unicode__(self):
         return self.name
 
+class Interview(models.Model):
+    name = models.CharField(max_length = 255)
+    link = models.CharField(max_length = 255, null=True, blank=True)
+
+    def __unicode__(self):
+        return self.name
+
 class Event(models.Model):
     name = models.CharField(max_length = 255)
     image = models.ImageField(upload_to="images")
@@ -96,6 +103,13 @@ class Writing(models.Model):
         return self.name
 
 class Testimonial(models.Model):
+    description = models.TextField()
+    source = models.CharField(max_length = 255)
+
+    def __unicode__(self):
+        return self.source
+
+class WritingTestimonial(models.Model):
     description = models.TextField()
     source = models.CharField(max_length = 255)
 

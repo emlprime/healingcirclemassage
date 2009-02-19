@@ -21,6 +21,8 @@ urlpatterns += patterns('healingcirclemassage.static.views',
     (r'^resume/$', 'resume'),
     (r'^appointments/$', 'appointment'),
     (r'^appointment/create/$', 'appointment'),
+    (r'^news/$', 'news_items'),
+    (r'^writings/$', 'writings'),
 )
 
 
@@ -29,8 +31,6 @@ urlpatterns += patterns('django.views.generic.list_detail',
     (r'^faq/$', 'object_list',{'queryset': Faq.objects.all(), 'template_name': 'faq.html'}),
     (r'^events/$', 'object_list',{'queryset': Event.objects.all(), 'template_name': 'event.html'}),
     (r'^testimonials/$', 'object_list',{'queryset': Testimonial.objects.all(), 'template_name': 'testimonials.html'}),
-    (r'^news/$', 'object_list',{'queryset': NewsItem.objects.all(), 'template_name': 'inthenews.html'}),
-    (r'^writings/$', 'object_list',{'queryset': Writing.objects.all(), 'template_name': 'writing.html'}),
 )
 
 urlpatterns += patterns('',

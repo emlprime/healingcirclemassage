@@ -6,7 +6,19 @@
   <h1>Kathy's Writings</h1>
 </div>
 
-{% for writing in object_list %}
+
+<ul>
+  {% for testimonial in testimonials %}
+
+  <li class="faq">{{testimonial.description}} ~ {{testimonial.source}}</li>
+
+  {% endfor %}
+
+</ul>
+
+
+
+{% for writing in articles %}
 
 <div id="event" class="grid_6">
 

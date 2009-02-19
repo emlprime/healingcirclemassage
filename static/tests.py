@@ -16,7 +16,7 @@ class TestStory(CommonTestCase):
         templates_used = ["static_section.html", "base.html"]
         doc = alice.clicks_a_link("/", templates_used=templates_used)
         # follow the links to the other static sections
-        for link in ["faq", "news", "resume", "services", "writings", "testimonials", "events", "appointments"]:
+        for link in ["faq", "news", "resume", "services", "writings", "testimonials", "events", "appointments", "instructional_dvd"]:
             alice.clicks_a_link("/"+link+"/")
         
     def test_form(self):

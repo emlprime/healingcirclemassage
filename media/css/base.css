@@ -26,6 +26,17 @@ color: white;
 margin-bottom: 1em;
 }
 
+#interviews
+{
+width: 100%
+
+}
+
+#interviews p
+{
+margin: 2em;
+}
+
 #event
 {
 float: left;

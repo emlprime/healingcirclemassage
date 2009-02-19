@@ -3,21 +3,18 @@
 {% block content %}
 
 <div id="title">
-  <h1>In the News</h1>
+  <h1>Articles Featuring Kathy</h1>
 </div>
 
-{% for news_item in object_list %}
+{% for news_item in news_items %}
 
 <div id="event" class="grid_6">
-
 
 {% if not news_item.link %}
 {% if not news_item.thumbnail_image %}
 <p class="faq">{{news_item.name}}</p>
 {% endif %}
 {% endif %}
-
-
 
 {% if news_item.link %}
 
@@ -55,5 +52,26 @@
 </div>
 
 {% endfor %}
+
+<div id="clear">
+&nbsp;
+</div>
+
+<div id="interviews" class="grid_6">
+
+  <h1>Interviews Featuring Kathy</h1>
+
+{% for interview in interviews %}
+
+{% if not interview.link %}
+<p class="faq">{{interview.name}}</p>
+{% endif %}
+
+{% if interview.link %}
+<a href="{{interview.link}}" target="_BLANK"><p class="faq">{{interview.name}}</p></a>
+{% endif %}
+
+{% endfor %}
+</div>
 
 {% endblock %}
