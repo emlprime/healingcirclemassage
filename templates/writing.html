@@ -65,9 +65,10 @@
 
 {% endfor %}
 
+<div class="clear">&nbsp;</div>
 <div id="contributing_articles">
 
-<p>Contributing Writer: Bizchicksrule.com</p>
+<h3>Contributing Writer: Bizchicksrule.com</h3>
 
 {% for article in bizchicksrule %}
 
@@ -75,7 +76,7 @@
 
 {% endfor %}
 
-<p>Regular Contributor: MassageMagazine.com</p>
+<h3>Regular Contributor: MassageMagazine.com</h3>
 
 {% for article in massagemagazine %}
 
@@ -83,7 +84,7 @@
 
 {% endfor %}
 
-<p>Regular Contributor: Southwest Blend Magazine</p>
+<h3>Regular Contributor: Southwest Blend Magazine</h3>
 
 {% for article in southwestblend %}
 
@@ -91,9 +92,9 @@
 
 {% endfor %}
 
-{% for article in other %}
+<h3>Other Writing Contributions:</h3>
 
-<p>From {{article.publication}}:</p>
+{% for article in other %}
 
 <a href="{{article.link}}" target="_BLANK"><p class="faq">{{article.name}}</p></a>
 
