@@ -15,7 +15,7 @@ h1
 margin-bottom: 1em;
 }
 
-#content
+#content, #dvd_info
 {
 text-align: center;
 }
@@ -24,6 +24,17 @@ text-align: center;
 {
 color: white;
 margin-bottom: 1em;
+}
+
+#interviews
+{
+width: 100%
+
+}
+
+#interviews p
+{
+margin: 2em;
 }
 
 #event
@@ -53,13 +64,13 @@ margin-left: 30px;
 width: 300px;
 }
 
-#appointments_text
+#appointments_text, #dvd_info
 {
 color: white;
 font-size: 1.1em;
 }
 
-#appointments_text p
+#appointments_text p, #dvd_info p
 {
 margin: 1em;
 }
@@ -76,7 +87,7 @@ body
 {
 	position: relative;
 	background-image: url("/media/images/sidebar_middle.png");
-	height: 380px;
+	height: 430px;
 	margin-top: 50px;
 }
 
@@ -99,7 +110,12 @@ body
 	text-decoration: underline;
 }
 
-#header
+#dvd_header img
+{
+   border: 2px solid black;
+}
+
+#header, #dvd_header
 {
 	height: 411x;
 	text-align: center;
@@ -149,7 +165,7 @@ a
 	color: black;
 }
 
-#blog
+.blog
 {
 	font-size: .7em;
 	margin-bottom: .5em;
@@ -258,4 +274,13 @@ text-align: left;
 margin-bottom: 1em;
 }
 
+#behind_the_scenes h2
+{
+color: white;
+text-align: center;
+}
 
+#behind_the_scenes img
+{
+margin: .5em;
+}

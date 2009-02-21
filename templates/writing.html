@@ -6,7 +6,19 @@
   <h1>Kathy's Writings</h1>
 </div>
 
-{% for writing in object_list %}
+
+<ul>
+  {% for testimonial in testimonials %}
+
+  <li class="faq">{{testimonial.description}} ~ {{testimonial.source}}</li>
+
+  {% endfor %}
+
+</ul>
+
+
+
+{% for writing in articles %}
 
 <div id="event" class="grid_6">
 
@@ -52,5 +64,41 @@
 </div>
 
 {% endfor %}
+
+<div id="contributing_articles">
+
+<p>Contributing Writer: Bizchicksrule.com</p>
+
+{% for article in bizchicksrule %}
+
+<a href="{{article.link}}" target="_BLANK"><p class="faq">{{article.name}}</p></a>
+
+{% endfor %}
+
+<p>Regular Contributor: MassageMagazine.com</p>
+
+{% for article in massagemagazine %}
+
+<a href="{{article.link}}" target="_BLANK"><p class="faq">{{article.name}}</p></a>
+
+{% endfor %}
+
+<p>Regular Contributor: Southwest Blend Magazine</p>
+
+{% for article in southwestblend %}
+
+<a href="{{article.link}}" target="_BLANK"><p class="faq">{{article.name}}</p></a>
+
+{% endfor %}
+
+{% for article in other %}
+
+<p>From {{article.publication}}:</p>
+
+<a href="{{article.link}}" target="_BLANK"><p class="faq">{{article.name}}</p></a>
+
+{% endfor %}
+
+</div>
 
 {% endblock %}

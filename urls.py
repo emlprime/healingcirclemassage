@@ -2,7 +2,7 @@ from django.conf.urls.defaults import *
 from django.contrib import admin
 
 from healingcirclemassage.settings import MEDIA_ROOT
-from healingcirclemassage.static.models import Service, Faq, Testimonial, Event, NewsItem, HomeText, Resume, Writing, Appointment
+from healingcirclemassage.static.models import Service, Faq, Testimonial, Event, NewsItem, HomeText, Resume, Appointment
 from healingcirclemassage.static.forms import AppointmentForm
 
 
@@ -13,6 +13,7 @@ urlpatterns = patterns('django.views.generic.simple',
     (r'^intake/$', 'direct_to_template', {'template': 'intake.html'}),
     (r'^help/$', 'direct_to_template', {'template': 'help.html'}),
     (r'^appointment/confirm/$', 'direct_to_template', {'template': 'appointment_confirmation.html'}),                       
+    (r'^instructional_dvd/$', 'direct_to_template', {'template': 'instructional_dvd.html'}),                       
 )
 
 urlpatterns += patterns('healingcirclemassage.static.views',
@@ -20,6 +21,8 @@ urlpatterns += patterns('healingcirclemassage.static.views',
     (r'^resume/$', 'resume'),
     (r'^appointments/$', 'appointment'),
     (r'^appointment/create/$', 'appointment'),
+    (r'^news/$', 'news_items'),
+    (r'^writings/$', 'writings'),
 )
 
 
@@ -28,8 +31,6 @@ urlpatterns += patterns('django.views.generic.list_detail',
     (r'^faq/$', 'object_list',{'queryset': Faq.objects.all(), 'template_name': 'faq.html'}),
     (r'^events/$', 'object_list',{'queryset': Event.objects.all(), 'template_name': 'event.html'}),
     (r'^testimonials/$', 'object_list',{'queryset': Testimonial.objects.all(), 'template_name': 'testimonials.html'}),
-    (r'^news/$', 'object_list',{'queryset': NewsItem.objects.all(), 'template_name': 'inthenews.html'}),
-    (r'^writings/$', 'object_list',{'queryset': Writing.objects.all(), 'template_name': 'writing.html'}),
 )
 
 urlpatterns += patterns('',
