@@ -1,10 +1,14 @@
 from django.contrib import admin
-from healingcirclemassage.static.models import Service, Faq, NewsItem, Event, Writing, Testimonial, Resume, HomeText, Appointment, Interview, WritingTestimonial
+from healingcirclemassage.static.models import Service, Faq, NewsItem, Event, Writing, Testimonial, Resume, HomeText, Appointment, Interview, WritingTestimonial, ContributingWriter
 
 
 class InterviewAdmin(admin.ModelAdmin):
     pass
 admin.site.register(Interview, InterviewAdmin)
+
+class ContributingWriterAdmin(admin.ModelAdmin):
+    pass
+admin.site.register(ContributingWriter, ContributingWriterAdmin)
 
 class ResumeAdmin(admin.ModelAdmin):
     pass

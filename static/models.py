@@ -115,3 +115,18 @@ class WritingTestimonial(models.Model):
 
     def __unicode__(self):
         return self.source
+
+class ContributingWriter(models.Model):
+
+    SOURCE_CHOICES = (
+        ("B","Bizchicksrule.com"),
+        ("M","MassageMagazine.com"),
+        ("S","Southwest Blend Magazine"),
+        ("O","Other"),
+        )
+
+    name = models.CharField(max_length = 255)
+    link = models.CharField(max_length = 255, null=True, blank=True)
+    publication = models.CharField(max_length=1, choices=SOURCE_CHOICES)
+    def __unicode__(self):
+        return self.name

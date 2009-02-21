@@ -2,7 +2,7 @@ from django.conf.urls.defaults import *
 from django.contrib import admin
 
 from healingcirclemassage.settings import MEDIA_ROOT
-from healingcirclemassage.static.models import Service, Faq, Testimonial, Event, NewsItem, HomeText, Resume, Writing, Appointment
+from healingcirclemassage.static.models import Service, Faq, Testimonial, Event, NewsItem, HomeText, Resume, Appointment
 from healingcirclemassage.static.forms import AppointmentForm
 
 
