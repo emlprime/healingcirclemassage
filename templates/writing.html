@@ -3,14 +3,14 @@
 {% block content %}
 
 <div id="title">
-  <h1>Kathy's Writings</h1>
+  <h1>Kathy's Articles</h1>
 </div>
 
 
 <ul>
   {% for testimonial in testimonials %}
 
-  <li class="faq">{{testimonial.description}} ~ {{testimonial.source}}</li>
+  <li class="faq"><p>{{testimonial.description}}</p> <p>~ {{testimonial.source}}</p></li>
 
   {% endfor %}
 
@@ -20,7 +20,7 @@
 
 {% for writing in articles %}
 
-<div id="event" class="grid_6">
+<div class="event grid_5">
 
 {% if not writing.link %}
 {% if not writing.thumbnail_image %}

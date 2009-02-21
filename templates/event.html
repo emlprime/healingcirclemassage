@@ -8,8 +8,8 @@
 
 {% for event in object_list %}
 
-<div id="event" class="grid_6">
-  <img src="/media/{{event.image}}" />
+<div class="event grid_5">
+  <img src="/media/{{event.image}}" alt="{{ event.name }}" />
   <p class="faq">{{event.name}}</p>
 </div>
 

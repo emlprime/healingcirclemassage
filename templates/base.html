@@ -15,44 +15,47 @@
   </head>
   <body>
     <div class="container_16">
-
-
-	    <div class="grid_4" id="navigation">
-	      {% block navigation %}
-	      <ul>
-		<li><a href="/">Home</a></li>
-		<li><a href="/services/">Services</a></li>
-		<li><a href="/resume/">Resume</a></li>
-		<li><a href="/faq/">FAQ</a></li>
-		<li><a href="/news/">Featured Expert</a></li>
-		<li><a href="/writings/">Articles</a></li>
-		<li><a href="/events/">Events</a></li>
-		<li><a href="/appointments/">Appointments</a></li>
-		<li><a href="/testimonials/">Testimonials</a></li>
-		<li><a href="/instructional_dvd/">Instructional DVD</a></li>
-	      </ul>
-	      {% endblock %}
-	    </div>
-	    {% block header %}
-	  <div id="header" class="grid_4 prefix_3">
-	    <img alt="Healing Circle Massage" src="/media/images/yinyang.gif" />
+	  
+	  <div class="grid_4" id="navigation">
+		{% block navigation %}
+	    <ul>
+		  <li><a href="/">Home</a></li>
+		  <li><a href="/services/">Services</a></li>
+		  <li><a href="/resume/">Resume</a></li>
+		  <li><a href="/faq/">FAQ</a></li>
+		  <li><a href="/news/">Featured Expert</a></li>
+		  <li><a href="/writings/">Articles</a></li>
+		  <li><a href="/events/">Events</a></li>
+		  <li><a href="/appointments/">Appointments</a></li>
+		  <li><a href="/testimonials/">Testimonials</a></li>
+		  <li><a href="/instructional_dvd/">Instructional DVD</a></li>
+	    </ul>
+		{% endblock %}
 	  </div>
 
+	  <div id="header">
+		{% block header %}
+		<div id="banner" class="grid_4 prefix_3">
+	      <img alt="Healing Circle Massage" src="/media/images/yinyang.gif" />
+		</div>
 
-	    <div id="content" class="grid_12">
-
+		<div class="grid_12">
 	      <p class="announce">Coming in Spring 2009: Instructional Massage DVD</p>
 	      <p class="announce">Learn to Rub People the Right Way &reg;</p>
-	      {% endblock %}
+		</div>
+		{% endblock %}
+	  </div>
 
+	  <div id="content" class="grid_12">
+	    {% block content %}
+	    {% endblock %}
+	  </div>
 
-	      {% block content %}
-	      {% endblock %}
-
-	      <div class="clear">
+	  <div class="clear">
 		&nbsp;
-	      </div>
-	      <div class="text">
+	  </div>
+	  
+	  <div class="text grid_12 prefix_4">
 		<p><img alt="Accepts Visa and MasterCard" src="/media/images/visa_mastercard.jpg"/></p>
 		<div id="bottom_text">
 		  <h1>Please call us today for an appointment</h1><br />
@@ -61,25 +64,24 @@
 		</div>
 		<p><img alt="BodyWork" src="/media/images/bodyworklogo.gif" /><img alt="ANMA" src="/media/images/anma.gif" /></p>
 		<p class="blog">Copyright 2009 Healing Circle Massage</p>
-	      </div>
+	  </div>
 
-	    </div>
-    </div>
-<script type="text/javascript">
+	</div>
+	<script type="text/javascript">
 
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 
-</script>
+	</script>
 
-<script type="text/javascript">
+	<script type="text/javascript">
 
-try {
-var pageTracker = _gat._getTracker("UA-88241-8");
-pageTracker._trackPageview();
-} catch(err) {}
+	  try {
+	  var pageTracker = _gat._getTracker("UA-88241-8");
+	  pageTracker._trackPageview();
+	  } catch(err) {}
 
-</script>
+	</script>
 
   </body>
 </html>

@@ -43,7 +43,7 @@ width: 100%
 margin: 2em;
 }
 
-#event
+.event
 {
 float: left;
 width: 300px;
@@ -121,7 +121,7 @@ body
    border: 2px solid black;
 }
 
-#header, #dvd_header
+#banner, #dvd_header
 {
 	height: 411x;
 	text-align: center;
@@ -223,7 +223,7 @@ color: white;
 text-decoration: none;
 }
 
-#faq_question, h3
+.faq_question, h3
 {
 font-size: 1.2em;
 text-decoration: underline;
