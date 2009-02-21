@@ -20,6 +20,12 @@ margin-bottom: 1em;
 text-align: center;
 }
 
+#contributing_articles h3
+{
+margin: 2em;
+font-size: 1.2em;
+}
+
 #appointment_confirmation
 {
 color: white;
