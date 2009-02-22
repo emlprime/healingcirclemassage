@@ -16,8 +16,6 @@
 
 </ul>
 
-
-
 {% for writing in articles %}
 
 <div class="event grid_5">
@@ -31,16 +29,16 @@
 {% if writing.link %}
 
 {% if writing.thumbnail_image %}
-<a href="{{writing.link}}" target="_BLANK"> <img src="/media/{{writing.thumbnail_image}}" alt="{{writing.name}}" /></a>
+<a href="{{writing.link}}" rel="external"> <img src="/media/{{writing.thumbnail_image}}" alt="{{writing.name}}" /></a>
 {% endif %}
 
-<a href="{{writing.link}}" target="_BLANK"><p class="faq">{{writing.name}}</p></a>
+<p class="faq"><a href="{{writing.link}}" rel="external">{{writing.name}}</a></p>
 
 {% endif %}
 
 {% if writing.image_1 %}
  <a href="/media/{{writing.image_1}}"> <img src="/media/{{writing.thumbnail_image}}" alt="{{writing.name}}" /></a>
- <a href="/media/{{writing.image_1}}"><p class="faq">{{writing.name}}</p></a>
+<p class="faq"><a href="/media/{{writing.image_1}}">{{writing.name}}</a></p>
 {% endif %}
 
 <div class="faq">
@@ -72,7 +70,7 @@
 
 {% for article in bizchicksrule %}
 
-<a href="{{article.link}}" target="_BLANK"><p class="faq">{{article.name}}</p></a>
+<p class="faq"><a href="{{article.link}}" rel="external">{{article.name}}</a></p>
 
 {% endfor %}
 
@@ -80,7 +78,7 @@
 
 {% for article in massagemagazine %}
 
-<a href="{{article.link}}" target="_BLANK"><p class="faq">{{article.name}}</p></a>
+<p class="faq"><a href="{{article.link}}" rel="external">{{article.name}}</a></p>
 
 {% endfor %}
 
@@ -88,7 +86,7 @@
 
 {% for article in southwestblend %}
 
-<a href="{{article.link}}" target="_BLANK"><p class="faq">{{article.name}}</p></a>
+<p class="faq"><a href="{{article.link}}" rel="external">{{article.name}}</a></p>
 
 {% endfor %}
 
@@ -96,7 +94,7 @@
 
 {% for article in other %}
 
-<a href="{{article.link}}" target="_BLANK"><p class="faq">{{article.name}}</p></a>
+<p class="faq"><a href="{{article.link}}" rel="external">{{article.name}}</a></p>
 
 {% endfor %}
 
