@@ -1,19 +1,14 @@
 {% extends "static_section.html" %}
 
-<div class="grid_12">
+{% block header %}
+<div id="dvd_header" class="grid_4 prefix_2">
+  <img src="/media/images/dvd_cover.png" alt=" " />
+</div>
 
-  {% block header %}
-  <div id="dvd_header" class="grid_4 prefix_2">
-	<img src="/media/images/dvd_cover.png" alt=" " />
-  </div>
-
-  <div class="clear">
-	&nbsp;
-  </div>
-  {% endblock %}
-
-  {% block content %}
-
+<div class="clear">
+  &nbsp;
+</div>
+{% endblock %}
 
   <div id="dvd_info" class="grid_8 prefix_5">
 	<h2>24.99 + Tax</h2>
@@ -22,20 +17,19 @@
 	<p>To order by phone, please call (805)680-1984. Credit cards accepted over the phone.</p>
   </div>
 
-  <div id="clear">
-	&nbsp;
-  </div>
+<div id="clear">
+  &nbsp;
+</div>
 
-  <div id="behind_the_scenes" class="grid_12 prefix_3">
+<div id="behind_the_scenes" class="grid_12 prefix_3">
 
-	<h2>Behind The Scenes</h2>
-	<img src="/media/images/shoot1.jpg" alt=" " />
-	<img src="/media/images/shoot2.jpg" alt=" " class="odd_image" />
-	<img src="/media/images/shoot3.jpg" alt=" " />
-	<img src="/media/images/shoot4.jpg" alt=" " class="odd_image" />
-
-  </div>
+  <h2>Behind The Scenes</h2>
+  <img src="/media/images/shoot1.jpg" alt=" " />
+  <img src="/media/images/shoot2.jpg" alt=" " class="odd_image" />
+  <img src="/media/images/shoot3.jpg" alt=" " />
+  <img src="/media/images/shoot4.jpg" alt=" " class="odd_image" />
 
 </div>
+
 
 {% endblock %}

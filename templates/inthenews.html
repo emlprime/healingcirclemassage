@@ -19,10 +19,10 @@
 {% if news_item.link %}
 
 {% if news_item.thumbnail_image %}
-<a href="{{news_item.link}}" target="_BLANK"> <img src="/media/{{news_item.thumbnail_image}}" alt="{{news_item.name}}" /></a>
+<a href="{{news_item.link}}" rel="external"> <img src="/media/{{news_item.thumbnail_image}}" alt="{{news_item.name}}" /></a>
 {% endif %}
 
-<p class="faq"><a href="{{news_item.link}}" target="_BLANK">{{news_item.name}}</a></p>
+<p class="faq"><a href="{{news_item.link}}" rel="external">{{news_item.name}}</a></p>
 
 {% endif %}
 
@@ -68,7 +68,7 @@
 {% endif %}
 
 {% if interview.link %}
-<p class="faq"><a href="{{interview.link}}" target="_BLANK">{{interview.name}}</a></p>
+<p class="faq"><a href="{{interview.link}}" rel="external">{{interview.name}}</a></p>
 {% endif %}
 
 {% endfor %}
