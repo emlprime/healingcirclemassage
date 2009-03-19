@@ -119,6 +119,8 @@ body
 #dvd_header img
 {
    border: 2px solid black;
+   margin-left: 20px;
+   margin-bottom: 1em;
 }
 
 #banner, #dvd_header
