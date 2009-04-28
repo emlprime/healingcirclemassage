@@ -13,7 +13,6 @@ urlpatterns = patterns('django.views.generic.simple',
     (r'^intake/$', 'direct_to_template', {'template': 'intake.html'}),
     (r'^help/$', 'direct_to_template', {'template': 'help.html'}),
     (r'^appointment/confirm/$', 'direct_to_template', {'template': 'appointment_confirmation.html'}),                       
-    (r'^instructional_dvd/$', 'direct_to_template', {'template': 'instructional_dvd.html'}),                       
 )
 
 urlpatterns += patterns('healingcirclemassage.static.views',
@@ -23,6 +22,7 @@ urlpatterns += patterns('healingcirclemassage.static.views',
     (r'^appointment/create/$', 'appointment'),
     (r'^news/$', 'news_items'),
     (r'^writings/$', 'writings'),
+    (r'^instructional_dvd/$', 'dvd_page'),
 )
 
 

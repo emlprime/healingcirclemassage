@@ -116,6 +116,13 @@ class WritingTestimonial(models.Model):
     def __unicode__(self):
         return self.source
 
+class DVDTestimonial(models.Model):
+    description = models.TextField()
+    source = models.CharField(max_length = 255)
+
+    def __unicode__(self):
+        return self.source
+
 class ContributingWriter(models.Model):
 
     SOURCE_CHOICES = (

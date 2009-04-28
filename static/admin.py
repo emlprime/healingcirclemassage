@@ -1,5 +1,5 @@
 from django.contrib import admin
-from healingcirclemassage.static.models import Service, Faq, NewsItem, Event, Writing, Testimonial, Resume, HomeText, Appointment, Interview, WritingTestimonial, ContributingWriter
+from healingcirclemassage.static.models import Service, Faq, NewsItem, Event, Writing, Testimonial, Resume, HomeText, Appointment, Interview, WritingTestimonial, DVDTestimonial, ContributingWriter
 
 
 class InterviewAdmin(admin.ModelAdmin):
@@ -49,3 +49,7 @@ admin.site.register(Testimonial, TestimonialAdmin)
 class WritingTestimonialAdmin(admin.ModelAdmin):
     pass
 admin.site.register(WritingTestimonial, WritingTestimonialAdmin)
+
+class DVDTestimonialAdmin(admin.ModelAdmin):
+    pass
+admin.site.register(DVDTestimonial, DVDTestimonialAdmin)

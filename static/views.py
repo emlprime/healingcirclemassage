@@ -4,8 +4,15 @@ from django.template import RequestContext
 from django.shortcuts import render_to_response
 
 
-from healingcirclemassage.static.models import Appointment, Resume, HomeText, NewsItem, Interview, WritingTestimonial, Writing, ContributingWriter
+from healingcirclemassage.static.models import Appointment, Resume, HomeText, NewsItem, Interview, WritingTestimonial, Writing, ContributingWriter, DVDTestimonial
 from healingcirclemassage.static.forms import AppointmentForm
+
+def dvd_page(request):
+    template='instructional_dvd.html'
+    testimonials = DVDTestimonial.objects.all()
+    context=locals()
+    return render_to_response(template, context, context_instance=RequestContext(request))
+
 
 def writings(request):
     template = 'writing.html'

@@ -42,6 +42,16 @@
   &nbsp;
 </div>
 
+<ul>
+  {% for testimonial in testimonials %}
+
+  <li class="faq"><p>{{testimonial.description}}</p> <p>~ {{testimonial.source}}</p></li>
+
+  {% endfor %}
+
+</ul>
+
+
 <div id="behind_the_scenes" class="grid_12 prefix_3">
 
   <h2>Behind The Scenes</h2>
