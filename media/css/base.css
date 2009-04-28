@@ -70,7 +70,7 @@ margin-left: 30px;
 width: 300px;
 }
 
-#appointments_text, #dvd_info
+#appointments_text, #dvd_info, #more_dvd_info
 {
 color: white;
 font-size: 1.1em;
@@ -291,4 +291,10 @@ text-align: center;
 #behind_the_scenes img
 {
 margin: .5em;
+}
+
+#dvd_info
+{
+margin-top:2em;
+margin-bottom: 2em;
 }
