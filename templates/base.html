@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+{% load email_tags %}
   <head>
     <title>{% block title %}Healing Circle Massage{% endblock %}</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -35,6 +36,9 @@
 		  <li><a href="/instructional_dvd/">Instructional DVD</a></li>
 	    </ul>
 		{% endblock %}
+
+	    {% display_email_area %}
+
 	  </div>
 	  <div id="header">
 		{% block header %}
@@ -47,6 +51,7 @@
 	      <p class="announce">Learn to Rub People the Right Way &reg;</p>
 		</div>
 		{% endblock %}
+
 	  </div>
 
 	  <div id="content" class="grid_12">
@@ -54,9 +59,13 @@
 	    {% endblock %}
 	  </div>
 
+
+
 	  <div class="clear">
 		&nbsp;
 	  </div>
+
+
 	  <div class="text grid_12 prefix_4">
 		<p><img alt="Accepts Visa and MasterCard" src="/media/images/visa_mastercard.jpg"/></p>
 		<div id="bottom_text">

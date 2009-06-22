@@ -20,6 +20,11 @@ margin-bottom: 1em;
 text-align: center;
 }
 
+#email_form
+{
+margin-top: 50px;
+}
+
 #contributing_articles h3
 {
 margin: 2em;

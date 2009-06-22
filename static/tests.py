@@ -18,6 +18,17 @@ class TestStory(CommonTestCase):
         # follow the links to the other static sections
         for link in ["faq", "news", "resume", "services", "writings", "testimonials", "events", "appointments", "instructional_dvd"]:
             alice.clicks_a_link("/"+link+"/")
+
+    def test_email_submit(self):
+        """ Alice wants to add her email address to the email list
+
+        she should...
+        """
+        alice = self.alice
+        # go to the home page
+        doc = alice.clicks_a_link("/")
+        # submit the email form
+        alice.submits_a_form(doc=doc, form_css_id="email", post_data={"email":"alice@emlprime.com"})
         
     def test_form(self):
         """Alice wants to make an appointment

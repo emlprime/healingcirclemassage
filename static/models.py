@@ -14,6 +14,13 @@ class Appointment(models.Model):
     def __unicode__(self):
         return self.last_name
 
+class Email(models.Model):
+    """ Model for the emails submitted to be added to the mailing list
+    """
+    email = models.EmailField()
+
+    def __unicode__(self):
+        return self.email
 
 class Resume(models.Model):
     employment = models.TextField()

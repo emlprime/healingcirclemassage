@@ -1,6 +1,9 @@
 from django.contrib import admin
-from healingcirclemassage.static.models import Service, Faq, NewsItem, Event, Writing, Testimonial, Resume, HomeText, Appointment, Interview, WritingTestimonial, DVDTestimonial, ContributingWriter
+from healingcirclemassage.static.models import Service, Faq, NewsItem, Event, Writing, Testimonial, Resume, HomeText, Appointment, Interview, WritingTestimonial, DVDTestimonial, ContributingWriter, Email
 
+class EmailAdmin(admin.ModelAdmin):
+    pass
+admin.site.register(Email, EmailAdmin)
 
 class InterviewAdmin(admin.ModelAdmin):
     pass

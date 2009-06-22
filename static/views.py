@@ -5,7 +5,7 @@ from django.shortcuts import render_to_response
 
 
 from healingcirclemassage.static.models import Appointment, Resume, HomeText, NewsItem, Interview, WritingTestimonial, Writing, ContributingWriter, DVDTestimonial
-from healingcirclemassage.static.forms import AppointmentForm
+from healingcirclemassage.static.forms import AppointmentForm, EmailForm
 
 def dvd_page(request):
     template='instructional_dvd.html'
@@ -49,7 +49,31 @@ def hometext(request):
     hometext = HomeText.objects.latest()
     context=locals()
     return render_to_response(template, context, context_instance=RequestContext(request))
-    
+
+def email_add(request):
+    """ Creates an email object and notifies Kathy that she has a new email subscriber
+    """
+    if request.method=='POST':
+        print "request method is post"
+        page = request.META['HTTP_REFERER'] if request.META.has_key('HTTP_REFERER') else '/'
+        values = request.POST.copy()
+        print values
+        form=EmailForm(values)
+        if form.is_valid():
+            print "form is valid"
+            email=form.save()
+            message = "%s has subscribed to your email mailing list" % (email)
+            #try to send mail. If it fails, print an error
+            try:
+                send_mail('Email Subscriber to Healing Circle', message, 'subscribers@healingcirclemassage.com', ['healingcirclemassage@hotmail.com'], fail_silently=False)
+            except:
+                print "Error: could not send mail"
+        else:
+            print "form is not valid", form.errors
+            errors = form.errors
+    context=locals()
+    return HttpResponseRedirect(page)
+
 
 def appointment(request):
     """ Creates an appointment object and emails to Kathy from the appointment form

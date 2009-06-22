@@ -3,7 +3,7 @@ from django.contrib import admin
 
 from healingcirclemassage.settings import MEDIA_ROOT
 from healingcirclemassage.static.models import Service, Faq, Testimonial, Event, NewsItem, HomeText, Resume, Appointment
-from healingcirclemassage.static.forms import AppointmentForm
+from healingcirclemassage.static.forms import AppointmentForm, EmailForm
 
 
 admin.autodiscover()
@@ -20,6 +20,7 @@ urlpatterns += patterns('healingcirclemassage.static.views',
     (r'^resume/$', 'resume'),
     (r'^appointments/$', 'appointment'),
     (r'^appointment/create/$', 'appointment'),
+    (r'^email/add/$','email_add'),
     (r'^news/$', 'news_items'),
     (r'^writings/$', 'writings'),
     (r'^instructional_dvd/$', 'dvd_page'),
