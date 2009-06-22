@@ -20,9 +20,22 @@ margin-bottom: 1em;
 text-align: center;
 }
 
-#email_form
+#email_area
 {
 margin-top: 50px;
+font-size: 0.9em;
+color: white;
+text-align:center;
+}
+
+#email_area p
+{
+margin-top: 1em;
+}
+
+#email_form input
+{
+margin-bottom:1em;
 }
 
 #contributing_articles h3
