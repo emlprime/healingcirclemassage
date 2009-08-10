@@ -136,6 +136,7 @@ class ContributingWriter(models.Model):
         ("B","Bizchicksrule.com"),
         ("M","MassageMagazine.com"),
         ("S","Southwest Blend Magazine"),
+        ("G","Massage Schools Guide"),
         ("O","Other"),
         )
 
