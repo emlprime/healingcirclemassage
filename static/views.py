@@ -42,6 +42,13 @@ def resume(request):
     context=locals()
     return render_to_response(template, context, context_instance=RequestContext(request))
 
+def speaking(request):
+    """ Bio and bullet points of lectures with testmonials
+    """
+    template = "speaking.html"
+    context=locals()
+    return render_to_response(template, context, context_instance=RequestContext(request))
+
 def hometext(request):
     """Submits the latest hometext to the URL
     """

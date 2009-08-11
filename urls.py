@@ -22,6 +22,7 @@ urlpatterns += patterns('healingcirclemassage.static.views',
     (r'^appointment/create/$', 'appointment'),
     (r'^email/add/$','email_add'),
     (r'^news/$', 'news_items'),
+    (r'^speaking/$', 'speaking'),
     (r'^writings/$', 'writings'),
     (r'^instructional_dvd/$', 'dvd_page'),
 )
