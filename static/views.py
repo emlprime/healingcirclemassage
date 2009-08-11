@@ -19,6 +19,7 @@ def writings(request):
     other = ContributingWriter.objects.filter(publication="O")
     bizchicksrule = ContributingWriter.objects.filter(publication="B")
     massagemagazine = ContributingWriter.objects.filter(publication="M")
+    massageschoolsguide = ContributingWriter.objects.filter(publication="G")
     southwestblend = ContributingWriter.objects.filter(publication="S")        
     articles = Writing.objects.all()
     testimonials = WritingTestimonial.objects.all()
