@@ -70,7 +70,13 @@
 
 {% for article in massageschoolsguide %}
 
-<p class="faq"><a href="{{article.link}}" rel="external">{{article.name}}</a></p>
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
 
 {% endfor %}
 
@@ -78,7 +84,13 @@
 
 {% for article in bizchicksrule %}
 
-<p class="faq"><a href="{{article.link}}" rel="external">{{article.name}}</a></p>
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
 
 {% endfor %}
 
@@ -86,7 +98,13 @@
 
 {% for article in massagemagazine %}
 
-<p class="faq"><a href="{{article.link}}" rel="external">{{article.name}}</a></p>
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
 
 {% endfor %}
 
@@ -94,7 +112,13 @@
 
 {% for article in southwestblend %}
 
-<p class="faq"><a href="{{article.link}}" rel="external">{{article.name}}</a></p>
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
 
 {% endfor %}
 
@@ -102,7 +126,13 @@
 
 {% for article in other %}
 
-<p class="faq"><a href="{{article.link}}" rel="external">{{article.name}}</a></p>
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
 
 {% endfor %}
 
