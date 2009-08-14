@@ -51,6 +51,11 @@
 
 <h1>Testimonials</h1>
 
+  {% for testimonial in testimonials %}
+
+  <li class="faq"><p>{{testimonial.description}}</p> <p>~ {{testimonial.source}}</p></li>
+
+  {% endfor %}
 
 
 </div>
