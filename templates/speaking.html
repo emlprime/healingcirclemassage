@@ -1,5 +1,6 @@
 {% extends "static_section.html" %}
 
+{% load markup %}
 {% block content %}
 <div class="speaking">
   
@@ -44,13 +45,13 @@
 <p>Please contact Kathy to view lecture footage. </p>
 
 <h1>Testimonials</h1>
-
+<ul>
   {% for testimonial in testimonials %}
 
-  <li class="faq"><p>{{testimonial.description}}</p> <p>~ {{testimonial.source}}</p></li>
+  <li class="faq"><p>{{testimonial.description|markdown}}</p> <p>~ {{testimonial.source}}</p></li>
 
   {% endfor %}
-
+</ul>
 
 </div>
 
