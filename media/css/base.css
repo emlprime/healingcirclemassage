@@ -304,3 +304,7 @@ ul.speaker li {
     margin-top: 1em;
 }
 
+.detailed_text p {
+    margin-top: 1em;
+    text-align: left;
+}
