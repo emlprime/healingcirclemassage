@@ -5,11 +5,6 @@
     padding:0;
 }
 
-h1
-{
-    color: white;
-}
-
 #title
 {
     margin-bottom: 1em;
@@ -24,7 +19,6 @@ h1
 {
     margin-top: 50px;
     font-size: 0.9em;
-    color: white;
     text-align:center;
 }
 
@@ -46,7 +40,6 @@ h1
 
 #appointment_confirmation
 {
-    color: white;
     margin-bottom: 1em;
 }
 
@@ -79,7 +72,6 @@ h1
 #form p
 {
     margin-top: .5em;
-    color: white;
 }
 
 #form input, #form textarea
@@ -90,7 +82,6 @@ h1
 
 #appointments_text, #dvd_info, #more_dvd_info
 {
-    color: white;
     font-size: 1.1em;
 }
 
@@ -104,14 +95,15 @@ body
     font-family: trebuchet ms,modern;
     font-size: 15px;
     background-image: url('/media/images/reiki1.jpg');
-    color: FFFFFF;  
+    color: white;
+    line-height: 18px;
 }
 
 #navigation
 {
     position: relative;
     background-image: url("/media/images/sidebar_middle.png");
-    height: 460px;
+    height: 490px;
     margin-top: 50px;
 }
 
@@ -126,7 +118,6 @@ body
 #navigation li a
 {
     text-decoration: underline;
-    color: #fff;
 }
 
 #navigation li a:hover
@@ -173,7 +164,6 @@ p.natural_health_link a
     font-size: 1.4em;
     text-align: center;
     font-weight: bold;
-    color: white;
 }
 
 #home_page p
@@ -183,12 +173,8 @@ p.natural_health_link a
 
 a
 {
+    text-decoration: underline;
     color: white;
-}
-
-.header_text
-{
-    color: black;
 }
 
 .blog
@@ -204,15 +190,9 @@ a
 
 #small_text
 {
-    color: white;
     text-align: center;
     font-size: .8em;
     font-weight: normal;
-}
-
-#resume_header
-{
-    color: white;
 }
 
 #resume_header img
@@ -235,7 +215,6 @@ a
 {
     margin-bottom: 1em;
     text-align: center;
-    color: white;
 }
 
 .faq a
@@ -260,7 +239,6 @@ a
     outline: 2px solid white;
     text-align: left;
     margin: 1em;
-    color: white
 }
 
 .service_name
@@ -283,7 +261,7 @@ a
 h1 {
     font-size:                     21px;
     font-weight:                    bold;
-    display:                           inline;
+    margin-top: 1em;
 }
 
 h2 {
@@ -302,7 +280,6 @@ h2 {
 
 #behind_the_scenes h2
 {
-    color: white;
     text-align: center;
 }
 
@@ -327,6 +304,3 @@ ul.speaker li {
     margin-top: 1em;
 }
 
-.speaking h1 {
-    margin-top: 1em;
-}
