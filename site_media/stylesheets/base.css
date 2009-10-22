@@ -1,0 +1,305 @@
+
+*
+{
+    margin:0;
+    padding:0;
+}
+
+#title
+{
+    margin-bottom: 1em;
+}
+
+#content, #dvd_info
+{
+    text-align: center;
+}
+
+#email_area
+{
+    margin-top: 50px;
+    font-size: 0.9em;
+    text-align:center;
+}
+
+#email_area p
+{
+    margin-top: 1em;
+}
+
+#email_form input
+{
+    margin-bottom:1em;
+}
+
+#contributing_articles h3
+{
+    margin: 2em;
+    font-size: 1.2em;
+}
+
+#appointment_confirmation
+{
+    margin-bottom: 1em;
+}
+
+#interviews
+{
+    width: 100%
+
+}
+
+#interviews p
+{
+    margin: 2em;
+}
+
+.event
+{
+    float: left;
+    width: 300px;
+    margin-top: 1em;
+}
+
+#form
+{
+    text-align: right;
+    margin-right: 180px;
+    position: relative;
+    margin-bottom: .5em;
+}
+
+#form p
+{
+    margin-top: .5em;
+}
+
+#form input, #form textarea
+{
+    margin-left: 30px;
+    width: 300px;
+}
+
+#appointments_text, #dvd_info, #more_dvd_info
+{
+    font-size: 1.1em;
+}
+
+#appointments_text p, #dvd_info p
+{
+    margin: 1em;
+}
+
+body
+{
+    font-family: trebuchet ms,modern;
+    font-size: 15px;
+    background-image: url('/site_media/images/reiki1.jpg');
+    color: white;
+    line-height: 18px;
+}
+
+#navigation
+{
+    position: relative;
+    background-image: url("/site_media/images/sidebar_middle.png");
+    height: 520px;
+    margin-top: 50px;
+}
+
+#navigation li
+{
+    list-style-type: none;
+    font-size: 16px;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+#navigation li a
+{
+    text-decoration: underline;
+}
+
+#navigation li a:hover
+{
+    text-decoration: underline;
+}
+
+#dvd_header img
+{
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-bottom: 1em;
+}
+
+#banner, #dvd_header
+{
+    height: 411x;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.announce
+{
+    color: #F93;
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+p.natural_health_link
+{
+    margin-bottom: 1em;
+    border: 2px solid white;
+}
+
+p.natural_health_link a
+{
+    text-decoration: none;
+}
+
+#home_page, .text
+{
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#home_page p
+{
+    margin-top: 1em;
+}
+
+a
+{
+    text-decoration: underline;
+    color: white;
+}
+
+.blog
+{
+    font-size: .9em;
+    margin-bottom: .5em;
+}
+
+#bottom_text
+{
+    margin-bottom: 1em;
+}
+
+#small_text
+{
+    text-align: center;
+    font-size: .8em;
+    font-weight: normal;
+}
+
+#resume_header img
+{
+    margin: .5em;
+}
+
+#resume
+{
+    margin-top: 2em;
+}
+
+#resume h2
+{
+    text-align: left;
+    margin-bottom: .5em;
+}
+
+.faq, h3, #resume
+{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.faq_question, h3
+{
+    font-size: 1.2em;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#services p
+{
+    margin: .5em;
+}
+
+.service
+{
+    outline: 2px solid white;
+    text-align: left;
+    margin: 1em;
+}
+
+.service_name
+{
+    font-size: 1.1em;
+    margin-left: .5em;
+}
+
+.service_description
+{
+    font-size: .9em;
+}
+
+.service_price
+{
+    text-align: right;
+}
+
+
+h1 {
+    font-size:                     21px;
+    font-weight:                    bold;
+    margin-top: 1em;
+}
+
+h2 {
+    font-size:                     18px;
+    font-weight:                    bold;
+    text-decoration:            underline;
+}
+
+
+
+
+#resume p {
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+#behind_the_scenes h2
+{
+    text-align: center;
+}
+
+#behind_the_scenes img
+{
+    margin: .5em;
+}
+
+#dvd_info
+{
+    margin-top:2em;
+    margin-bottom: 2em;
+}
+
+.podcast {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ul.speaker li {
+    margin-top: 1em;
+}
+
+.detailed_text p {
+    margin-top: 1em;
+    text-align: left;
+}
