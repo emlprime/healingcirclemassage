@@ -4,4 +4,6 @@ db_data
 *.pyc
 site.pid
 django
-media/admin
+admin_media
+apache
+registration
