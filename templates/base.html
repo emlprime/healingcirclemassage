@@ -1,48 +1,43 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 {% load email_tags %}
-  <head>
-    <title>{% block title %}Healing Circle Massage{% endblock %}</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	<meta name="verify-v1" content="ev86N4AOG4aIZY4Cgui4lzNRz6jZdhakrJ1OK9GphTQ=" >
-    {% block css %}
-    <link rel="stylesheet" type="text/css" href="/media/css/960.css" />
-    <link rel="stylesheet" type="text/css" href="/media/css/text.css" />
-    <link rel="stylesheet" type="text/css" href="/media/css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="/media/css/base.css" />
-    <link rel="icon" type="image/gif" href="/media/images/favicon.gif" />
-    {% endblock %}
-    {% block section_css %}{% endblock %}
-    {% block page_css %}{% endblock %}
-
-    <script type="text/javascript" src="/media/scripts/jquery-1.2.3.min.js"></script>
-    <script type="text/javascript" src="/media/scripts/base.js"></script>
-    
-  </head>
-  <body>
-    <div class="container_16">
-	  
-	  <div class="grid_4" id="navigation">
-		{% block navigation %}
-	    <ul>
-		  <li><a href="/">Home</a></li>
-		  <li><a href="https://www.thegiftcardcafe.com/cart/index.php?storeID=1551" rel="external">Instant Gift Certificates</a></li>
-		  <li><a href="/services/">Massage Services</a></li>
-		  <li><a href="/resume/">Resume</a></li>
-		  <li><a href="/speaking/">As a Speaker</a></li>
-		  <li><a href="/news/">As an Expert</a></li>
-		  <li><a href="/writings/">As a Writer</a></li>
-		  <li><a href="/events/">Events</a></li>
-		  <li><a href="/appointments/">Appointments</a></li>
-		  <li><a href="/testimonials/">Massage Testimonials</a></li>
-		  <li><a href="/instructional_dvd/">Instructional DVD</a></li>
-		  <li><a href="/faq/">FAQ</a></li>
-	    </ul>
-		{% endblock %}
-
-	    {% display_email_form %}
-
-	  </div>
+<head>
+  <title>{% block title %}Healing Circle Massage{% endblock %}</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="verify-v1" content="ev86N4AOG4aIZY4Cgui4lzNRz6jZdhakrJ1OK9GphTQ=" />
+  {% block css %}
+  <link rel="stylesheet" type="text/css" href="/media/css/960.css" />
+  <link rel="stylesheet" type="text/css" href="/media/css/text.css" />
+  <link rel="stylesheet" type="text/css" href="/media/css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="/media/css/base.css" />
+  <link rel="icon" type="image/gif" href="/media/images/favicon.gif" />
+  {% endblock %}
+  {% block section_css %}{% endblock %}
+  {% block page_css %}{% endblock %}
+  
+  <script type="text/javascript" src="/media/scripts/jquery-1.2.3.min.js"></script>
+  <script type="text/javascript" src="/media/scripts/base.js"></script>
+  
+</head>
+<body>
+  <div class="container_16">
+    <div class="grid_4" id="navigation">
+      {% block navigation %}
+      <ul>
+	<li><a href="/">Home</a></li>
+	<li><a href="https://www.thegiftcardcafe.com/cart/index.php?storeID=1551" rel="external">Instant Gift Certificates</a></li>
+	<li><a href="/services/">Massage Services</a></li>
+	<li><a href="/resume/">Resume</a></li>
+	<li><a href="/speaking/">As a Speaker</a></li>
+	<li><a href="/news/">As an Expert</a></li>
+	<li><a href="/writings/">As a Writer</a></li>
+	<li><a href="/appointments/">Appointments</a></li>
+	<li><a href="/testimonials/">Massage Testimonials</a></li>
+	<li><a href="/instructional_dvd/">Instructional DVD</a></li>
+      </ul>
+      {% endblock %}
+      {% display_email_form %}      
+    </div>
 	  <div id="header">
 		{% block header %}
 		<div id="banner" class="grid_4 prefix_3">
@@ -50,8 +45,8 @@
 		</div>
 
 		<div class="grid_12">
-	      <p class="announce">Now Available: Instructional Massage DVD</p>
-	      <p class="announce">Learn to Rub People the Right Way &reg;</p>
+	      <p class="announce">Now Available: The Alternative Medicine Cabinet:</p>
+	      <p class="announce">A book of natural health tips</p>
 		</div>
 		{% endblock %}
 
@@ -79,22 +74,17 @@
 		<p><img alt="BodyWork" src="/media/images/bodyworklogo.gif" /><img alt="ANMA" src="/media/images/anma.gif" /></p>
 		<p class="blog">Copyright 2009 Healing Circle Massage</p>
 	  </div>
-
 	</div>
 	<script type="text/javascript">
-
 	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 	  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-
 	</script>
 
 	<script type="text/javascript">
-
 	  try {
 	  var pageTracker = _gat._getTracker("UA-88241-8");
 	  pageTracker._trackPageview();
 	  } catch(err) {}
-
 	</script>
 
   </body>

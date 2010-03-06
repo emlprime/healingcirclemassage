@@ -144,6 +144,9 @@ class ContributingWriter(models.Model):
         ("M","MassageMagazine.com"),
         ("S","Southwest Blend Magazine"),
         ("G","Massage Schools Guide"),
+        ("P","Pacific Coast Business Times"),
+        ("C","Corporate Wellness Magazine"),
+        ("SB","SBParent"),
         ("O","Other"),
         )
 

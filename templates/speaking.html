@@ -1,54 +1,14 @@
 {% extends "static_section.html" %}
 
-{% load markup %}
+{% comment %}{% load markup %}{% endcomment %}
 {% block content %}
-<div class="speaking">
-  
-<h1>Lectures and Workshops</h1>
-<ul class="speaker">
-  <li>Next workshop: Oct 2009 - Wellness for the working woman at NAWBO</li>
-  <li>Repetative Stress Injuries: Santa Barbara Insurance Academy</li>
-  <li>Depression and Natural Remedies: Antioch University</li>
-  <li>Women in Business Panel Discussion: 2008-2009 at Girls Inc.</li>
-  <li>How to stay sick: Tuesday nights for healing</li>
-  <li>Nutrition and Pathology Classes: Faculty Santa Barbara Business College</li>
-  <li>Couples Massage Instruction</li>
-  <li>Massage Therapist Mentor</li>
-</ul>
-
-<h1>Kathy's Bio</h1>
-<div class="detailed_text">
-<p>Kathy Gruver is a dynamic and entertaining speaker. Her lectures enlighten, educate and inspire.  An expert in natural health and wellness, Kathy has two decades of hands on experience and had a flair for communicating in a fun and conversational way. As a former actor she incorporates that creativity and humor into each of her presentations. </p>
-
-<p>Kathy has worked with thousands of clients as young as 6 and as old as 103. She has helped people heal, not only on physical level, but emotionally and spiritually as well. Assisting with births, end of life transitions, divorces, losses and celebrations has rounded out her experience and made her a diverse professional that can take on any healing situation. </p>
-
-<p>Kathy has been featured as an expert is publications such as Massage Magazine, SouthWest Blend, Discover, The Holistic Option, Bottled Water Web, DermaScope magazine, and Pacific Coast Business Times. She has written health and wellness articles as well as business topics. She has appeared as a guest on numerous radio shows covering topics such as back pain, mind/body medicine, healthy pregnancy, homeopathics, nutrition, herbs, patient advocacy and massage for wellness. </p>
-
-<p>Kathy's business Healing Circle Massage was featured as a Best Practice by Massage Magazine two years in a row. Her article in the same magazine on Awkward Massage Moments was one of the top read health articles for several months. </p>
-
-<p>Kathy serves on the advisory committee for The Holistic Option, a website resource for all your natural health and wellness needs. She was their featured expert on a podcast on the Emotional Components of Back Pain. </p>
-
-<p>Kathy has earned her Doctorate as a Traditional Naturopath, her Masters in Natural Health and is pursuing her PhD. She has a BFA in theatre from Point Park University in Pittsburgh and was a working actor in Los Angeles for many years. She served on the faculty of SBBCollege where she taught massage, nutrition and pathology. She has lectured for both the public and universities. </p>
-</div>
-
-<h1>Topics</h1>
-<ul class="future_topics">
-<li>Wellness for the Working Woman </li>
-<li>Corporate Health and Wellness</li>
-<li>Change your Mind, Change your Body</li>
-<li>Self-talk: Talk Yourself Well</li>
-<li>Nutrition for Health</li>
-<li>Staying Sick; How to Guarantee You'll be Sick and Unhappy the Rest of your Miserable Life</li>
-<li>Marketing and Business Tips for Massage and Natural Health Practitioners.</li>
-</ul>
-<div class="spacer"> &nbsp; </div>
-<p>Please contact Kathy to view lecture footage. </p>
+<div class="speaking">  
 
 <h1>Testimonials</h1>
 <ul>
   {% for testimonial in testimonials %}
 
-  <li class="faq"><p>{{testimonial.description|markdown}}</p> <p>~ {{testimonial.source}}</p></li>
+  <li class="faq"><p>{{testimonial.description}}</p> <p>~ {{testimonial.source}}</p></li>
 
   {% endfor %}
 </ul>
