@@ -122,6 +122,21 @@
 
 {% endfor %}
 
+<h3>Regular Contributor: Corporate Wellness Magazine</h3>
+
+{% for article in corporatewellness %}
+
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
+
+{% endfor %}
+
+
 <h3>Other Writing Contributions:</h3>
 
 {% for article in other %}
