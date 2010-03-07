@@ -21,6 +21,7 @@ def writings(request):
     massagemagazine = ContributingWriter.objects.filter(publication="M")
     massageschoolsguide = ContributingWriter.objects.filter(publication="G")
     southwestblend = ContributingWriter.objects.filter(publication="S")        
+    corporatewellness = ContributingWriter.objects.filter(publication="C")
     articles = Writing.objects.all()
     testimonials = WritingTestimonial.objects.all()
     context = locals()
