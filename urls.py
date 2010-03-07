@@ -37,6 +37,6 @@ urlpatterns += patterns('django.views.generic.list_detail',
 )
 
 urlpatterns += patterns('',
-    (r'^media/(.*)$', 'django.views.static.serve', {'document_root': MEDIA_ROOT}),
+    (r'^site_media/(.*)$', 'django.views.static.serve', {'document_root': MEDIA_ROOT}),
     (r'^admin/(.*)$', admin.site.root),
 )
