@@ -100,7 +100,7 @@ body
 {
     font-family: trebuchet ms,modern;
     font-size: 15px;
-    background-image: url('/media/images/reiki1.jpg');
+    background-image: url('/site_media/images/reiki1.jpg');
     color: white;
     line-height: 18px;
 }
@@ -108,8 +108,9 @@ body
 #navigation
 {
     position: relative;
-    background-image: url("/media/images/sidebar_middle.png");
     height: 480px;
+    background-image: url("/site_media/images/sidebar_middle.png");
+    height: 520px;
     margin-top: 50px;
 }
 

@@ -31,7 +31,7 @@
 {% if news_item.link %}
 
 {% if news_item.thumbnail_image %}
-<a href="{{news_item.link}}" rel="external"> <img src="/media/{{news_item.thumbnail_image}}" alt="{{news_item.name}}" /></a>
+<a href="{{news_item.link}}" rel="external"> <img src="/site_media/{{news_item.thumbnail_image}}" alt="{{news_item.name}}" /></a>
 {% endif %}
 
 <p class="faq"><a href="{{news_item.link}}" rel="external">{{news_item.name}}</a></p>
@@ -39,23 +39,23 @@
 {% endif %}
 
 {% if news_item.image_1 %}
- <a href="/media/{{news_item.image_1}}"> <img src="/media/{{news_item.thumbnail_image}}" alt="{{news_item.name}}" /></a>
- <p class="faq"><a href="/media/{{news_item.image_1}}">{{news_item.name}}</a></p>
+ <a href="/site_media/{{news_item.image_1}}"> <img src="/site_media/{{news_item.thumbnail_image}}" alt="{{news_item.name}}" /></a>
+ <p class="faq"><a href="/site_media/{{news_item.image_1}}">{{news_item.name}}</a></p>
 {% endif %}
 
 <div class="faq">
 
 {% if news_item.image_2 %}
 (Pages 
-<a href="/media/{{news_item.image_1}}">1</a>
-<a href="/media/{{news_item.image_2}}"> | 2</a>
+<a href="/site_media/{{news_item.image_1}}">1</a>
+<a href="/site_media/{{news_item.image_2}}"> | 2</a>
 
 {% if news_item.image_3 %}
-<a href="/media/{{news_item.image_3}}"> | 3</a>
+<a href="/site_media/{{news_item.image_3}}"> | 3</a>
 {% endif %}
 
 {% if news_item.image_4 %}
-<a href="/media/{{news_item.image_1}}"> | 4</a>
+<a href="/site_media/{{news_item.image_1}}"> | 4</a>
 {% endif %}
 )
 {% endif %}
