@@ -15,6 +15,12 @@
     text-align: center;
 }
 
+.speaking p
+{
+  margin: 1em;
+}
+
+
 #email_area
 {
     margin-top: 50px;
@@ -103,7 +109,7 @@ body
 {
     position: relative;
     background-image: url("/media/images/sidebar_middle.png");
-    height: 450px;
+    height: 480px;
     margin-top: 50px;
 }
 
@@ -138,6 +144,19 @@ body
     text-align: center;
     margin-top: 50px;
     position: relative;
+}
+
+#book_header
+{
+  padding-top: 50px;
+}
+
+.dvd_content, .book_contents
+{
+  list-style-type: disc;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 1em;
 }
 
 .announce
@@ -302,4 +321,10 @@ ul.speaker li {
 .detailed_text p {
     margin-top: 1em;
     text-align: left;
+}
+
+#buy_book_button
+{
+ text-align:center;
+  margin-bottom:1em;
 }

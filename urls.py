@@ -11,6 +11,7 @@ admin.autodiscover()
 urlpatterns = patterns('django.views.generic.simple',
     (r'^consultation/$', 'direct_to_template', {'template': 'consultation.html'}),
     (r'^intake/$', 'direct_to_template', {'template': 'intake.html'}),
+    (r'^books/$', 'direct_to_template', {'template': 'books.html'}),
     (r'^help/$', 'direct_to_template', {'template': 'help.html'}),
     (r'^appointment/confirm/$', 'direct_to_template', {'template': 'appointment_confirmation.html'}),                       
 )
