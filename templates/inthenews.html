@@ -73,17 +73,19 @@
 
   <h1>On the Air</h1>
   <p>Kathy has appeared on numerous radio shows as an expert guest on the following topics:</p>
+<ul id="speaking_list">
 {% for interview in interviews %}
 
 {% if not interview.link %}
-<p class="faq">{{interview.name}}</p>
+<li class="faq">{{interview.name}}</li>
 {% endif %}
 
 {% if interview.link %}
-<p class="faq"><a href="{{interview.link}}" rel="external">{{interview.name}}</a></p>
+<li class="faq"><a href="{{interview.link}}" rel="external">{{interview.name}}</a></li>
 {% endif %}
 
 {% endfor %}
+</ul>
 </div>
 
 {% endblock %}
