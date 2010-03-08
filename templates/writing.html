@@ -66,47 +66,6 @@
 <div class="clear">&nbsp;</div>
 <div id="contributing_articles">
 
-<h3>Contributing Writer: massageschoolsguide.com</h3>
-
-{% for article in massageschoolsguide %}
-
-<p class="faq">
-  {% if article.link %}
-  <a href="{{article.link}}" rel="external">{{article.name}}</a>
-  {% else %}
-  {{ article.name }}
-  {% endif %}
-</p>
-
-{% endfor %}
-
-<h3>Contributing Writer: Bizchicksrule.com</h3>
-
-{% for article in bizchicksrule %}
-
-<p class="faq">
-  {% if article.link %}
-  <a href="{{article.link}}" rel="external">{{article.name}}</a>
-  {% else %}
-  {{ article.name }}
-  {% endif %}
-</p>
-
-{% endfor %}
-
-<h3>Regular Contributor: www.MASSAGEmag.com</h3>
-
-{% for article in massagemagazine %}
-
-<p class="faq">
-  {% if article.link %}
-  <a href="{{article.link}}" rel="external">{{article.name}}</a>
-  {% else %}
-  {{ article.name }}
-  {% endif %}
-</p>
-
-{% endfor %}
 
 <h3>Regular Contributor: Southwest Blend Magazine</h3>
 
@@ -136,6 +95,51 @@
 
 {% endfor %}
 
+<h3>Regular Contributor: Pacific Coast Business Times</h3>
+
+<p>Regular Column on Corporate Wellness</p>
+
+<h3>Regular Contributor: www.MASSAGEmag.com</h3>
+
+{% for article in massagemagazine %}
+
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
+
+{% endfor %}
+
+<h3>Contributing Writer: Bizchicksrule.com</h3>
+
+{% for article in bizchicksrule %}
+
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
+
+{% endfor %}
+
+<h3>Contributing Writer: massageschoolsguide.com</h3>
+
+{% for article in massageschoolsguide %}
+
+<p class="faq">
+  {% if article.link %}
+  <a href="{{article.link}}" rel="external">{{article.name}}</a>
+  {% else %}
+  {{ article.name }}
+  {% endif %}
+</p>
+
+{% endfor %}
 
 <h3>Other Writing Contributions:</h3>
 
