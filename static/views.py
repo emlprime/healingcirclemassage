@@ -64,7 +64,7 @@ def email_add(request):
     """ Creates an email object and notifies Kathy that she has a new email subscriber
     """
     if request.method=='POST':
-        print "request method is post"
+#        print "request method is post"
         page = request.META['HTTP_REFERER'] if request.META.has_key('HTTP_REFERER') else '/'
         values = request.POST.copy()
         form=EmailForm(values)
@@ -74,10 +74,10 @@ def email_add(request):
             #try to send mail. If it fails, print an error
             try:
                 send_mail('Email Subscriber to Healing Circle', message, 'subscribers@healingcirclemassage.com', ['healingcirclemassage@hotmail.com'], fail_silently=False)
-#            except:
+            except:
+                send_mail('Promblem Adding Email', message, 'subscribers@healingcirclemassage.com', ['laura@emlprime.com'], fail_silently=False)
 #                print "Error: could not send mail"
         else:
-            print "form is not valid", form.errors
             errors = form.errors
     context=locals()
     return HttpResponseRedirect(page)
