@@ -23,7 +23,6 @@
 
 #email_area
 {
-    margin-top: 50px;
     font-size: 0.9em;
     text-align:center;
 }
@@ -335,6 +334,16 @@ ul.speaker li {
 }
 
 .solo_text
+{
+  margin: 2em;
+}
+
+#indie_sticker
+{
+  margin-left: 4em;
+}
+
+#sm_sticker
 {
   margin: 2em;
 }
