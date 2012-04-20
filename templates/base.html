@@ -23,9 +23,17 @@
   
 </head>
 <body>
-  <div class="container_16">
-    <div class="grid_4" id="navigation">
-      {% block navigation %}
+  <div id="wrapper" class="container_16">
+    <div class="grid_16" id="header">
+    <div id="banner" class="grid_5 alpha">
+      <img alt="Healing Circle Massage" src="/site_media/images/logo.png" />
+    </div>
+    <div class="grid_11 omega">
+      <img src="/site_media/images/header.png" alt="Healing Circle Massage"/>
+      </div>
+<div class="clear"> </div>
+<div class="grid_16 alpha" id="navigation">
+{% block navigation %}
       <ul>
 	<li><a href="/">Home</a></li>
 	<li><a href="https://www.thegiftcardcafe.com/cart/index.php?storeID=1551" rel="external">Instant Gift Certificates</a></li>
@@ -34,68 +42,69 @@
 	<li><a href="/resume/">Resume</a></li>
 	<li><a href="/speaking/">As a Speaker</a></li>
 	<li><a href="/news/">As an Expert</a></li>
-	<li><a href="/writings/">As a Writer</a></li>
+	<li class="last"><a href="/writings/">As a Writer</a></li>
 	<li><a href="/appointments/">Appointments</a></li>
 	<li><a href="/testimonials/">Massage Testimonials</a></li>
-	<li><a href="/instructional_dvd/">Instructional DVD</a></li>
+	<li class="last"><a href="/instructional_dvd/">Instructional DVD</a></li>
       </ul>
       {% endblock %}
-<div id="sm_sticker">
-<a href="http://www.indieexcellence.com/indie-results-2011.htm" target="_blank"><img src="http://www.indieexcellence.com/IEx_goldoval_finalist72s.png" width="160" height="75" border="0"></a>
-</div>
-      {% display_email_form %}      
     </div>
-	  <div id="header">
-		{% block header %}
-		<div id="banner" class="grid_4 prefix_3">
-	      <img alt="Healing Circle Massage" src="/site_media/images/yinyang.gif" />
-		</div>
+</div>
+    <div class="clear"> </div>
 
-		<div class="grid_12"><a href="http://www.thealternativemedicinecabinet.com" rel="external">
-	      <p class="announce">Now Available: The Alternative Medicine Cabinet:</p>
-	      <p class="announce">A book of natural health tips</p>
-		</a></div>
-		{% endblock %}
+      <div id="sidebox" class="grid_4 alpha omega">
+	{% block header %}
 
-	  </div>
+	<a href="http://www.thealternativemedicinecabinet.com" rel="external">
+	  <p class="announce">Now Available: The Alternative Medicine Cabinet:</p>
+	  <p class="announce">A book of natural health tips</p>
+	</a>
+	{% endblock %}
+	
+	<a href="http://www.indieexcellence.com/indie-results-2011.htm" target="_blank"><img src="http://www.indieexcellence.com/IEx_goldoval_finalist72s.png" width="160" height="75" border="0"></a>
+	  {% display_email_form %}      
+	</div>
 
-	  <div id="content" class="grid_12">
-	    {% block content %}
-	    {% endblock %}
-	  </div>
-
-
-
-	  <div class="clear">
-		&nbsp;
-	  </div>
-
-
-	  <div class="text grid_12 prefix_4">
-&nbsp;
-<p>Aired March 1st</p>
-<embed height="275" width="350" flashvars="v=D8U37FH2502727" allowfullscreen="true" swliveconnect="true" salign="t" wmode="transparent" quality="high" bgcolor="#FFFFFF" name="videoPlayer2" id="videoPlayer2" style="" src="http://www.thebalancingact.com/BA_Video_Player_320.swf" type="application/x-shockwave-flash"/>     
-		<p><img alt="Accepts Visa and MasterCard" src="/site_media/images/visa_mastercard.jpg"/></p>
-		<div id="bottom_text">
-		  <p>Please call us today for an appointment</p>
-		  <p>(805) 680-1984</p>
-		  <p>Healing Body, Mind and Spirit</p>
-		</div>
-		<p><img alt="BodyWork" src="/site_media/images/bodyworklogo.gif" /><img alt="ANMA" src="/site_media/images/anma.gif" /></p>
-		<p class="blog">Copyright 2009 Healing Circle Massage</p>
+	<div id="content-wrapper" class="grid_12 omega">
+	  <div id="content">
+	  {% block content %}
+	  {% endblock %}
 	  </div>
 	</div>
-	<script type="text/javascript">
+
+      <div class="clear"> </div>
+
+      <div id="footer" class="grid_16">
+	<div class="grid_8 alpha omega" id="footer_left">
+	  <p>Aired March 1st</p>
+	  <embed height="275" width="350" flashvars="v=D8U37FH2502727" allowfullscreen="true" swliveconnect="true" salign="t" wmode="transparent" quality="high" bgcolor="#FFFFFF" name="videoPlayer2" id="videoPlayer2" style="" src="http://www.thebalancingact.com/BA_Video_Player_320.swf" type="application/x-shockwave-flash"/>     
+	  </div>
+	<div class="grid_8 alpha omega" id="footer_right">
+	<p><img alt="Accepts Visa and MasterCard" src="/site_media/images/visa_mastercard.jpg"/></p>
+	<p>Please call us today for an appointment</p>
+	<p>(805) 680-1984</p>
+	<p>Healing Body, Mind and Spirit</p>
+      <p><img alt="BodyWork" src="/site_media/images/bodyworklogo.gif" /><img alt="ANMA" src="/site_media/images/anma.gif" /></p>
+      </div>
+<div class="clear"> </div>
+</div>
+<div class="clear"> </div>
+<div id="subfooter" class="grid_16">
+<p class="blog">&copy; 2012 Healing Circle Massage</p>
+</div>
+<div class="clear"> </div>
+    </div>
+    <script type="text/javascript">
 	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 	  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-
-	<script type="text/javascript">
+    </script>
+      
+    <script type="text/javascript">
 	  try {
 	  var pageTracker = _gat._getTracker("UA-88241-8");
 	  pageTracker._trackPageview();
 	  } catch(err) {}
-	</script>
+    </script>
 
   </body>
 </html>
