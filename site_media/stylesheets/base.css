@@ -21,7 +21,7 @@ background-image: url(/site_media/images/page_bg.jpg);
 
 #header, #subfooter
 {
-  background-color:#B9AB91;
+  background-color:#AD9B7B;
 }
 
 #banner img
@@ -107,7 +107,7 @@ margin: 20px;
 
 #content-wrapper
 {
-  border-left: 7px solid #B9AB91;
+  border-left: 7px solid #AD9B7B;
 }
 
 #sidebox
@@ -131,7 +131,7 @@ margin: 20px;
 
 #footer
 {
-  border-top: 7px solid #B9AB91;
+  border-top: 7px solid #AD9B7B;
 }
 
 #form
