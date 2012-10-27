@@ -1,9 +1,39 @@
 {% extends "static_section.html" %}
 
 {% block content %}
+  <div class="grid_5 alpha">
+    <img src="/site_media/images/mbt_front.jpg" height="300px" alt="Book Cover - Front" />
+    <br /><br/>
+  </div>
+  <div class="grid_6 omega">
+    <div id="buy_book_button">
+      <h4>Available Now for Pre-Order</h4>
+      <br />
+      <h4>Body-Mind Techniques for the Bodyworker</h4>
+      <h6>and other health practitioners</h6>
+      <br />
+      <p>A handbook of resources to enhance your practice and help more clients heal with mind-body medicine. </p>
+      <br />
+      <br /><h2>Pre-Order now: $12.95 + Tax</h2><br />
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	<input type="hidden" name="cmd" value="_xclick">
+	<input type="hidden" name="business" value="healingcirclemassage@hotmail.com">
+	<input type="hidden" name="lc" value="US">
+	<input type="hidden" name="item_name" value="Mind-Body Therapies">
+	<input type="hidden" name="amount" value="12.95">
+	<input type="hidden" name="currency_code" value="USD">
+	<input type="hidden" name="button_subtype" value="products">
+	<input type="hidden" name="shipping" value="0.00">
+	<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+	<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+	<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+  </div>
+  <div class="clear"></div>
 <div id="book_header">
   <div class="grid_5">
-    <img src="/site_media/images/AMC_Front_Cover.JPG" height="400px" alt="Book Cover - Front" />
+    <img src="/site_media/images/AMC_Front_Cover.JPG" height="300px" alt="Book Cover - Front" />
   </div>
   <div class="grid_6 omega">
     <br /><br /><br /><br />
