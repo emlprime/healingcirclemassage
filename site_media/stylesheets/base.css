@@ -158,6 +158,12 @@ margin: 20px;
   left: 150px;
 }
 
+.resume_headshot
+{
+  margin: 10px 220px;
+  max-width: 200px;
+}
+
 .announce
 {
   font-size: 14px;
