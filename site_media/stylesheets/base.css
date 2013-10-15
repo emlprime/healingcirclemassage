@@ -19,6 +19,11 @@ body
 background-image: url(/site_media/images/page_bg.jpg);
 }
 
+.errorlist {
+  font-weight: bold;
+  color: red;
+}
+
 #header, #subfooter
 {
   background-color:#AD9B7B;

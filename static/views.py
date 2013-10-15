@@ -91,6 +91,7 @@ def appointment(request):
         values = request.POST.copy()
         form = AppointmentForm(values)
         if form.is_valid():
+            form.clean()
             appointment=form.save()
             message =  "%s %s\n%s\n%s\n%s" % (appointment.first_name, appointment.last_name, appointment.phone_number, appointment.email, appointment.description)
             # try to send mail. If it fails print out an error

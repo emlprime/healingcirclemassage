@@ -1,3 +1,5 @@
+import re
+
 from django.forms.models import ModelForm
 from django.forms import forms
 
@@ -9,6 +11,13 @@ class AppointmentForm(ModelForm):
 
     class Meta:
         model = Appointment
+
+    def clean(self):
+        message = self.cleaned_data['description']
+        urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', message)
+        if urls:
+            raise forms.ValidationError("Please do not put any URLs in your appointment request comments")
+        return self.cleaned_data
 
     def save(self, commit=True):
         appointment = super(AppointmentForm, self).save()
