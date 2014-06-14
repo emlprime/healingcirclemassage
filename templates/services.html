@@ -5,9 +5,7 @@
 
 <p>Our upper State St. office in Santa Barbara, CA features two treatment rooms, parking and an alternative medicine lending library.</p>
 
-<p>Therapists available 7 days a week from 10am to 7pm.</p>
-
-<p>Kathy is typically available Monday through Friday.</p>
+<p>Dr. Gruver is available Monday through Friday and select evenings.</p>
 
 <p>We accept personal injury and worker's comp insurance cases with a Doctor's prescription.</p>
 
@@ -19,19 +17,23 @@
 
 {% for service in object_list %}
 
+<div class="service grid_11">
+
 {% if service.image %}
-
+<div class="grid_6 alpha">
 <img src="/site_media/{{service.image}}" alt=" "/>
-
+</div>
 {% endif %}
 
-<div class="service grid_11">
+<div class="grid_5 omega">
 
 <p class="service_name">{{service.name}}</p>
 
-<p class="service_description grid_6">{{service.description|safe}}</p>
+<p class="service_description">{{service.description|safe}}</p>
 
-<p class="service_price grid_4">{{service.price|safe}}</p>
+<p class="service_price">{{service.price|safe}}</p>
+
+</div>
 
 </div>
 
