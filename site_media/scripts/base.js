@@ -5,3 +5,11 @@ $(function(){
 	return false;
     });
 });
+
+$(document).ready(function() {
+    $('#submit_email').click(function(event) {
+        if($('.honey').val()) {
+     	    event.preventDefault();
+	}
+    });
+});

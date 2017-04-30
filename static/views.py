@@ -64,19 +64,16 @@ def email_add(request):
     """ Creates an email object and notifies Kathy that she has a new email subscriber
     """
     if request.method=='POST':
-#        print "request method is post"
         page = request.META['HTTP_REFERER'] if request.META.has_key('HTTP_REFERER') else '/'
         values = request.POST.copy()
         form=EmailForm(values)
         if form.is_valid():
             email=form.save()
-            message = "%s has subscribed to your email mailing list" % (email)
-            #try to send mail. If it fails, print an error
+            message = "%s has subscribed to your email mailing list from healingcirclemassage.com" % (email)
             try:
                 send_mail('Email Subscriber to Healing Circle', message, 'subscribers@healingcirclemassage.com', ['healingcirclemassage@hotmail.com'], fail_silently=False)
             except:
                 send_mail('Promblem Adding Email', message, 'subscribers@healingcirclemassage.com', ['laura@emlprime.com'], fail_silently=False)
-#                print "Error: could not send mail"
         else:
             errors = form.errors
     context=locals()
@@ -96,7 +93,7 @@ def appointment(request):
             message =  "%s %s\n%s\n%s\n%s" % (appointment.first_name, appointment.last_name, appointment.phone_number, appointment.email, appointment.description)
             # try to send mail. If it fails print out an error
             try:
-                send_mail('Appointment Request Submitted', message, 'appointments@healingcirclemassage.com', ['healingcirclemassage@hotmail.com'], fail_silently=False)
+                send_mail('Appointment Request Submitted from healingcirclemassage.com', message, 'appointments@healingcirclemassage.com', ['healingcirclemassage@hotmail.com'], fail_silently=False)
             except:
                 print "Error: could not send mail to admins"
             return HttpResponseRedirect("/appointment/confirm/")
