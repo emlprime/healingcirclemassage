@@ -9,6 +9,11 @@
   display: none;
 }
 
+.g-recaptcha-wrap {
+    width: 290px!important;
+    overflow: hidden;
+}
+
 body
 {
     font-family: trebuchet ms,modern;

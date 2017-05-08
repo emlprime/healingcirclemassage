@@ -1,4 +1,9 @@
+import urllib
+import urllib2
+import json
+
 from django.http import HttpResponseRedirect, HttpResponse
+from django.conf import settings
 from django.core.mail import send_mail
 from django.template import RequestContext
 from django.shortcuts import render_to_response
@@ -68,12 +73,28 @@ def email_add(request):
         values = request.POST.copy()
         form=EmailForm(values)
         if form.is_valid():
-            email=form.save()
-            message = "%s has subscribed to your email mailing list from healingcirclemassage.com" % (email)
-            try:
-                send_mail('Email Subscriber to Healing Circle', message, 'subscribers@healingcirclemassage.com', ['healingcirclemassage@hotmail.com'], fail_silently=False)
-            except:
-                send_mail('Promblem Adding Email', message, 'subscribers@healingcirclemassage.com', ['laura@emlprime.com'], fail_silently=False)
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values)
+            req = urllib2.Request(url, data)
+            response = urllib2.urlopen(req)
+            result = json.load(response)
+            ''' End reCAPTCHA validation '''
+            if result['success']:
+                email=form.save()
+                message = "%s has subscribed to your email mailing list from healingcirclemassage.com" % (email)
+                try:
+                    send_mail('Email Subscriber to Healing Circle', message, 'subscribers@healingcirclemassage.com', ['healingcirclemassage@hotmail.com'], fail_silently=False)
+                except:
+                    send_mail('Promblem Adding Email', message, 'subscribers@healingcirclemassage.com', ['laura@emlprime.com'], fail_silently=False)
+            else:
+                send_mail('Promblem Adding Email: recaptcha failed', message, 'subscribers@healingcirclemassage.com', ['laura@emlprime.com'], fail_silently=False)
+
         else:
             errors = form.errors
     context=locals()
